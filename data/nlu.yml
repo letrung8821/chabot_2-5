@@ -1,0 +1,244 @@
+version: "3.1"
+
+nlu:
+- intent: chào hỏi
+  examples: |
+    - xin chào
+    - chào
+    - helo
+    - bạn ơi
+    - alo
+    - có ai ở đây không
+    - chao xìn
+    - hà lố
+    - há lô
+    - hè lố
+    - hế lô
+    - chào buổi tối
+    - chào buổi trưa
+    - một ngày tốt lành
+    - lô
+    - ê
+    - ey
+    - ây
+    - hey
+    - hello
+    - hi
+    - hello there
+    - good morning
+    - good evening
+    - moin
+    - hey there
+    - let's go
+    - hey dude
+    - goodmorning
+    - goodevening
+    - good afternoon
+
+- intent: tạm biệt
+  examples: |
+    - cu
+    - bai
+    - tạm biệt
+    - gặp lại sau
+    - good by
+    - cee you later
+    - good night
+    - bye
+    - goodbye
+    - have a nice day
+    - see you around
+    - bye bye
+    - see you later
+
+- intent: ask name
+  examples: |
+    - bạn tên là gì
+    - bạn tên gì
+    - tên gì
+    - chị tên gì
+    - anh tên gì
+    - tên của bạn là gì
+    - tên của chị là gì
+    - tên của anh là gì
+    - cho mình hỏi tên nhé
+    - mình muốn biết tên bạn
+    - mình muốn tiện xưng hộ hơn, cho mình biết tên nhé
+    - để tiện xưng hộ thì tên bạn là gì
+    - cho em xin tên của anh ạ
+    - cho em xin tên của chị ạ
+    - được biết tên bạn thì tốt nhỉ
+    - vui lòng cho mình biết tên nhé
+    - xin phép hỏi tên của bạn
+    - vậy thì tên bạn là gì
+    - tên bạn trong tiếng việt là gì
+    - bạn có vui lòng cho mình biết tên được không
+    - chúng ta nên biết tên nhau nhỉ?
+    - em tên là gì thế
+    - tên em là gì
+    - tên em 
+    - tên bạn 
+    - bạn tên là gì 
+    - bạn tên gì thế
+    - em tên gì
+
+- intent: thank
+  examples: | 
+    - cảm ơn nha
+    - mình xin cảm ơn
+    - cảm ơn bạn
+    - thanks 
+    - thank you
+    - cảm ơn
+    - làm phiền rồi
+    - cảm ơn nhiều
+    - cảm ơn chatbot nhiều lắm
+    - cảm ơn chatbot
+    - mình cảm ơn 
+    - cảm ơn bạn nhiều
+
+- intent: chatbot làm gì
+  examples: | 
+    - chatbot có thể làm gì
+    - bạn có thể làm được những gì
+    - bạn có thể trả lời được những gì
+    - bạn trả lời được câu hỏi nào
+    - bạn có thể giúp gì được cho mình
+    - bạn biết những gì về trường iuh
+    - bạn biết những gì về trường 
+
+- intent: có
+  examples: | 
+    - có
+    - vâng
+    - có ạ
+    - tiếp
+
+- intent: không
+  examples: | 
+    - không 
+    - không ạ
+    - không cần nữa đâu ạ
+    - vậy được rồi
+
+#button 0
+- intent: thông tin trường
+  examples: |
+    - thông tin trường
+- intent: thông tin về khoa
+  examples: |
+    - thông tin về khoa
+- intent: học vụ
+  examples: |
+    - học vụ
+- intent: công tác sinh viên
+  examples: | 
+    - công tác sinh viên
+- intent: tuyển sinh
+  examples: |
+    - tuyển sinh
+
+
+#button 1
+- intent: khoa công nghệ thông tin #button1.1
+  examples: |
+    - khoa công nghệ thông tin
+- intent: khoa kinh tế #buuton 1.2
+  examples: |
+    - khoa kinh tế
+- intent: no_khoa #button 1.3
+  examples: |
+    - không phải 2 khoa trên 
+
+
+#button 1.1
+- intent: đội ngũ giảng viên #button 1.1.1
+  examples: |
+    - đội ngũ giảng viên 
+- intent: văn phòng đoàn khoa #button 1.1.2
+  examples: |
+    - văn phòng đoàn khoa
+- intent: lịch sử phát triển khoa #button 1.1.3
+  examples: |
+    - lịch sử phát triển khoa
+- intent: văn phòng khoa #button 1.1.4
+  examples: |
+    - văn phòng khoa
+- intent: giáo vụ #button 1.1.5
+  examples: |
+    - giáo vụ
+
+
+# button 2
+- intent: lịch sử phát triển #2.1
+  examples: | 
+    - lịch sử phát triển
+- intent: bán giám hiệu # 2.2
+  examples: | 
+    - ban giám hiệu
+- intent: phòng ban # 2.3
+  examples: | 
+    - phòng ban
+- intent: danh sách phòng học #2.4
+  examples: |
+    - danh sách phòng học
+- intent: ký túc xá # 2.5
+  examples: | 
+    - ký túc xá
+- intent: câu lạc bộ/nhóm # 2.6
+  examples: | 
+    - câu lạc bộ/nhóm
+- intent: tiện ích sinh viên #2.7
+  examples: |
+    - tiện ích sinh viên
+- intent: cơ sở vật chất
+  examples: |
+    - cơ sở vật chất
+  
+
+#button 2.2
+- intent: hiệu trưởng #2.2.1
+  examples: |
+    - hiệu trưởng
+- intent: phó hiệu trưởng #2.2.2
+  examples: | 
+    - phó hiệu trưởng
+
+
+#button 2.3
+- intent: phòng tổ chức - hành chính #2.3.1
+  examples: |
+    - phòng tổ chức - hành chính
+- intent: phòng tài chính - kế toán #2.3.2
+  examples: | 
+    - phòng tài chính - kế toán
+- intent: phòng kế hoạch - đầu tư #2.3.3
+  examples: | 
+    - phòng kế hoạch - đầu tư
+- intent: phòng đào tạo #2.3.4
+  examples: | 
+    - phòng đào tạo
+- intent: phòng quản lý khoa học và hợp tác quốc tế #2.3.5
+  examples: |
+    - phòng quản lý khoa học và hợp tác quốc tế
+- intent: phòng công tác sinh viên #2.3.6
+  examples: | 
+    - phòng công tác sinh viên
+- intent: phòng khảo thí và đảm bảo chất lượng #2.3.7
+  examples: |
+    - phòng khảo thí và đảm bảo chất lượng
+- intent: phòng quản trị #2.3.8
+  examples: | 
+    - phòng quản trị
+- intent: phòng dịch vụ #2.3.9
+  examples: |
+    - phòng dịch vụ
+- intent: phòng quản lý ký túc xá #2.3.10
+  examples: | 
+    - phòng quản lý ký túc xá
+- intent: tạp chí khoa học và công nghệ #2.3.11
+  examples: |
+    - tạp chí khoa học và công nghệ
+- intent: nhà xuất bản #2.3.12
+  examples: | 
+    - nhà xuất bản

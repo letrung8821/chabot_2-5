@@ -1,0 +1,496 @@
+version: "3.1"
+
+stories:
+
+- story: hiệu trưởng - chào hỏi
+  steps:
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: ban giám hiệu
+  - action: utter_ban_giam_hieu
+  - intent: hiệu trưởng
+  - action: utter_hieu_truong
+  - intent: thank
+  - action: utter_thank
+  - intent: tạm biệt
+  - action: utter_tam_biet
+
+- story: phó hiệu trưởng - chào hỏi
+  steps:
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: ban giám hiệu
+  - action: utter_ban_giam_hieu
+  - intent: phó hiệu trưởng
+  - action: utter_pho_hieu_truong
+  - intent: thank
+  - action: utter_thank
+  - intent: tạm biệt
+  - action: utter_tam_biet
+
+- story: thông tin trường
+  steps: 
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: ban giám hiệu
+  - action: utter_ban_giam_hieu
+
+- story: hiệu trưởng
+  steps:
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: ban giám hiệu
+  - action: utter_ban_giam_hieu
+  - intent: hiệu trưởng
+  - action: utter_hieu_truong
+
+- story: phó hiệu trưởng
+  steps:
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: ban giám hiệu
+  - action: utter_ban_giam_hieu
+  - intent: phó hiệu trưởng
+  - action: utter_pho_hieu_truongg
+
+- story: thông tin trường 
+  steps: 
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: ban giám hiệu
+  - action: utter_ban_giam_hieu
+  - intent: hiệu trưởng
+  - action: utter_hieu_truong
+
+- story: thông tin trường
+  steps: 
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: ban giám hiệu
+  - action: utter_ban_giam_hieu
+  - intent: phó hiệu trưởng
+  - action: utter_pho_hieu_truong
+
+- story: phó hiệu trưởng
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: ban giám hiệu
+  - action: utter_ban_giam_hieu
+  - intent: phó hiệu trưởng
+  - action: utter_pho_hieu_truong
+  - intent: thank
+  - action: utter_thank
+
+- story: cơ sở vật chất - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: cơ sở vật chất
+  - action: utter_co_so_vat_chat
+
+- story: cơ sở vật chất
+  steps: 
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: cơ sở vật chất
+  - action: utter_co_so_vat_chat
+
+#story gọi lại
+# - story: gọi lại
+#   steps:
+#   - intent: có
+#   - action: utter_chatbot_lam_gi
+#   - intent: không
+#   - action: utter_tam_biet
+
+- story: phòng tổ chức hành chính - chào hỏi
+  steps:
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: phòng ban
+  - action: utter_phong_ban
+  - intent: phòng tổ chức - hành chính
+  - action: utter_phong_to_chuc_hanh_chinh
+  - intent: thank
+  - action: utter_thank
+
+- story: phòng tài chính kế toán - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: phòng ban
+  - action: utter_phong_ban
+  - intent: phòng tài chính - kế toán
+  - action: utter_phong_tai_chinh_ke_toan
+  - intent: thank
+  - action: utter_thank
+
+- story: phòng kế hoạch - đầu tư - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: phòng ban
+  - action: utter_phong_ban
+  - intent: phòng kế hoạch - đầu tư
+  - action: utter_phong_ke_hoach_dau_tu
+  - intent: thank
+  - action: utter_thank
+
+- story: phòng đào tạo - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: phòng ban
+  - action: utter_phong_ban
+  - intent: phòng đào tạo
+  - action: utter_phong_dao_tao
+  - intent: thank
+  - action: utter_thank
+
+- story: phòng quản lý khoa học và hợp tác quốc tế - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: phòng ban
+  - action: utter_phong_ban
+  - intent: phòng quản lý khoa học và hợp tác quốc tế
+  - action: utter_phong_quan_ly_khoa_hoc_va_hop_tac_quoc_te
+  - intent: thank
+  - action: utter_thank
+
+- story: phòng công tác sinh viên - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: phòng ban
+  - action: utter_phong_ban
+  - intent: phòng công tác sinh viên
+  - action: utter_phong_cong_tac_sinh_vien
+  - intent: thank
+  - action: utter_thank
+
+- story: phòng khảo thí và đảm bảo chất lượng - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: phòng ban
+  - action: utter_phong_ban
+  - intent: phòng khảo thí và đảm bảo chất lượng
+  - action: utter_phong_khao_thi_va_dam_bao_chat_luong
+  - intent: thank
+  - action: utter_thank
+
+- story: phòng quản trị - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: phòng ban
+  - action: utter_phong_ban
+  - intent: phòng quản trị
+  - action: utter_phong_quan_tri
+  - intent: thank
+  - action: utter_thank
+
+- story: phòng dịch vụ - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: phòng ban
+  - action: utter_phong_ban
+  - intent: phòng dịch vụ
+  - action: utter_phong_dich_vu
+  - intent: thank
+  - action: utter_thank
+
+- story: phòng quản lý ký túc xá - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: phòng ban
+  - action: utter_phong_ban
+  - intent: phòng quản lý ký túc xá
+  - action: utter_phong_quan_ly_ky_tuc_xa
+  - intent: thank
+  - action: utter_thank
+
+- story: tạp chí khoa học và công nghệ - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: phòng ban
+  - action: utter_phong_ban
+  - intent: tạp chí khoa học và công nghệ
+  - action: utter_tap_chi_khoa_hoc_va_cong_nghe
+  - intent: thank
+  - action: utter_thank
+
+- story: nhà xuất bản - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: phòng ban
+  - action: utter_phong_ban
+  - intent: nhà xuất bản
+  - action: utter_nha_xuat_ban
+  - intent: thank
+  - action: utter_thank
+
+- story: phòng tổ chức hành chính
+  steps:
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: phòng ban
+  - action: utter_phong_ban
+  - intent: phòng tổ chức - hành chính
+  - action: utter_phong_to_chuc_hanh_chinh
+  - intent: thank
+  - action: utter_thank
+
+- story: phòng tài chính kế toán
+  steps: 
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: phòng ban
+  - action: utter_phong_ban
+  - intent: phòng tài chính - kế toán
+  - action: utter_phong_tai_chinh_ke_toan
+  - intent: thank
+  - action: utter_thank
+
+- story: phòng kế hoạch - đầu tư
+  steps: 
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: phòng ban
+  - action: utter_phong_ban
+  - intent: phòng kế hoạch - đầu tư
+  - action: utter_phong_ke_hoach_dau_tu
+  - intent: thank
+  - action: utter_thank
+
+- story: phòng đào tạo
+  steps: 
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: phòng ban
+  - action: utter_phong_ban
+  - intent: phòng đào tạo
+  - action: utter_phong_dao_tao
+  - intent: thank
+  - action: utter_thank
+
+- story: phòng quản lý khoa học và hợp tác quốc tế
+  steps: 
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: phòng ban
+  - action: utter_phong_ban
+  - intent: phòng quản lý khoa học và hợp tác quốc tế
+  - action: utter_phong_quan_ly_khoa_hoc_va_hop_tac_quoc_te
+  - intent: thank
+  - action: utter_thank
+
+- story: phòng công tác sinh viên
+  steps: 
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: phòng ban
+  - action: utter_phong_ban
+  - intent: phòng công tác sinh viên
+  - action: utter_phong_cong_tac_sinh_vien
+  - intent: thank
+  - action: utter_thank
+
+- story: phòng khảo thí và đảm bảo chất lượng
+  steps: 
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: phòng ban
+  - action: utter_phong_ban
+  - intent: phòng khảo thí và đảm bảo chất lượng
+  - action: utter_phong_khao_thi_va_dam_bao_chat_luong
+  - intent: thank
+  - action: utter_thank
+
+- story: phòng quản trị
+  steps: 
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: phòng ban
+  - action: utter_phong_ban
+  - intent: phòng quản trị
+  - action: utter_phong_quan_tri
+  - intent: thank
+  - action: utter_thank
+
+- story: phòng dịch vụ
+  steps: 
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: phòng ban
+  - action: utter_phong_ban
+  - intent: phòng dịch vụ
+  - action: utter_phong_dich_vu
+  - intent: thank
+  - action: utter_thank
+
+- story: phòng quản lý ký túc xá
+  steps: 
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: phòng ban
+  - action: utter_phong_ban
+  - intent: phòng quản lý ký túc xá
+  - action: utter_phong_quan_ly_ky_tuc_xa
+  - intent: thank
+  - action: utter_thank
+
+- story: tạp chí khoa học và công nghệ
+  steps: 
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: phòng ban
+  - action: utter_phong_ban
+  - intent: tạp chí khoa học và công nghệ
+  - action: utter_tap_chi_khoa_hoc_va_cong_nghe
+  - intent: thank
+  - action: utter_thank
+
+- story: nhà xuất bản
+  steps: 
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: phòng ban
+  - action: utter_phong_ban
+  - intent: nhà xuất bản
+  - action: utter_nha_xuat_ban
+  - intent: thank
+  - action: utter_thank

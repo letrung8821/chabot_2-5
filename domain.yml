@@ -1,0 +1,244 @@
+version: "3.1"
+
+intents:
+  - chào hỏi
+  - ask name
+  - tạm biệt
+  - chatbot làm gì
+  - thank
+  - có 
+  - không
+#button 0
+  - thông tin trường
+  - thông tin về khoa
+  - học vụ
+  - công tác sinh viên
+  - tuyển sinh
+#button 1
+  - khoa công nghệ thông tin #1.1
+  - khoa kinh tế #1.2
+  - no_khoa #1.3
+#button 1.1
+  - đội ngũ giảng viên  #1.1.1
+  - văn phòng đoàn khoa #1.1.2
+  - lịch sử phát triển khoa #1.1.3
+  - văn phòng khoa #1.1.4
+  - giáo vụ #1.1.5
+#button 2
+  - lịch sử phát triển #2.1
+  - ban giám hiệu #2.2
+  - phòng ban #2.3
+  - danh sách phòng học #2.4
+  - ký túc xá #2.5
+  - câu lạc bộ/nhóm #2.6
+  - tiện ích sinh viên #2.7
+  - cơ sở vật chất
+#button 2.2
+  - hiệu trưởng #2.2.1
+  - phó hiệu trưởng #2.2.2
+#button 2.3
+  - phòng tổ chức - hành chính #2.3.1
+  - phòng tài chính - kế toán #2.3.2
+  - phòng kế hoạch - đầu tư #2.3.3
+  - phòng đào tạo #2.3.4
+  - phòng quản lý khoa học và hợp tác quốc tế #2.3.5
+  - phòng công tác sinh viên #2.3.6
+  - phòng khảo thí và đảm bảo chất lượng #2.3.7
+  - phòng quản trị #2.3.8
+  - phòng dịch vụ #2.3.9
+  - phòng quản lý ký túc xá #2.3.10
+  - tạp chí khoa học và công nghệ #2.3.11
+  - nhà xuất bản #2.3.12
+
+responses:
+
+  utter_chao_hoi:
+  - text: "Kính chào Quý khách!"
+
+  utter_tam_biet:
+  - text: "Kính chào tạm biệt và mong sớm gặp lại quý khách!"
+  - text: "Kính chào tạm biệt và chúc quý khách một ngày tốt lành!"
+  
+  utter_thank:
+  - text: "Cảm ơn quý khách quá khen ah!, anh/chị có cần hỏi thêm gì không ạ?"
+  - text: "Dạ không có gì, đó là trách nhiệm của em mà! Hi Hi, anh/chị có cần hỏi thêm gì không ạ?"
+  
+  utter_ask_name:
+  - text: "Em họ Chat, tên Bot! Người ta hay gọi em là Chat Bot thông minh xinh đẹp giỏi giang nhất vũ trụ ạ! Quý khách cần trợ giúp gì ạ?"
+  - text: "Dạ thưa. Tên Tiếng Việt của em là Trợ lý ảo nhưng em thích gọi bằng tên Tiếng Anh là Chat Bot cho nó Tây!"
+  - text: "Anh/Chị có thể gọi em theo cách thân thương là Chát Bót ạ!"
+  
+  utter_unclear:
+  - text: "Thưa quý khách, hiện tại tôi chưa hiểu được yêu cầu của Quý khách. "
+
+
+#button 0
+  utter_chatbot_lam_gi:
+  - text: "những việc bạn có thể hỏi chatbot"
+    buttons:
+    - title: Thông tin trường
+      payload: /thông tin trường
+    - title: Thông tin về khoa
+      payload: /thông tin về khoa
+    - title: Học vụ
+      payload: /học vụ
+    - title: Công tác sinh viên
+      payload: /công tác sinh viên
+    - title: Tuyển sinh
+      payload: /tuyển sinh
+
+#button 1
+  utter_thong_tin_ve_khoa:
+  - text: "Bạn có thể lựa chọn 1 số khoa cụ thể để biết thêm thông tin:"
+    buttons:
+    - title: Khoa công nghệ thông tin  #button 1.1
+      payload: /khoa công nghệ thông tin
+    - title: Khoa kinh tế
+      payload: /khoa kinh tế #button 1.2
+    - title: không phải 2 khoa trên #button 1.3
+      payload: /no_khoa
+
+#button 1.1
+  utter_khoa_cong_nghe_thong_tin:
+  - text: "Vui lòng chọn 1 thông tin cụ thể:"
+    buttons:
+    - title: Đội ngũ giảng viên  #button 1.1.1
+      payload: /đội ngũ giảng viên
+    - title: Văn phòng đoàn Khoa
+      payload: /văn phòng đoàn khoa #button 1.1.2
+    - title: Lịch sử phát triển khoa #button 1.1.3
+      payload: /lịch sử phát triển khoa
+    - title: Văn phòng khoa #button 1.1.4
+      payload: /văn phòng khoa
+    - title: Giáo vụ #button 1.1.5
+      payload: /giáo vụ
+
+#button 2
+  utter_thong_tin_truong:
+  - text: "Bạn hãy chọn một thông tin cụ thể"
+    buttons: 
+    - title: Lịch sử phát triển
+      payload: /lịch sử phát triển #button 2.1
+    - title: Ban giám hiệu
+      payload: /ban giám hiệu #button 2.2
+    - title: Phòng ban
+      payload: /phòng ban #button 2.3
+    - title: Danh sách phòng học 
+      payload: /danh sách phòng học #button 2.4
+    - title: Ký túc xá
+      payload: /ký túc xá #button 2.5
+    - title: Câu lạc bộ/Nhóm
+      payload: /câu lạc bộ/nhóm #button 2.6
+    - title: Tiện ích sinh viên
+      payload: /tiện ích sinh viên # button 2.7
+    - title: Cơ sở vật chất
+      payload: /cơ sở vật chất
+
+#button 2.2
+  utter_ban_giam_hieu:
+  - text: "bạn hãy chọn người bạn muốn tìm hiểu"
+    buttons: 
+    - title: Hiệu trưởng
+      payload: /hiệu trưởng
+    - title: Phó hiệu trưởng
+      payload: /phó hiệu trưởng
+
+#button 2.2.1
+  utter_hieu_truong:
+  - text: "TS. Phan Hồng Hải"
+  utter_pho_hieu_truong:
+  - text: "GS-TS. Lê Văn Tán, PGS-TS. Đào Sao Mai, TS. Nguyễn Xuân Hồng"
+
+#button 2.3
+  utter_phong_ban:
+  - text: "phòng ban"
+    buttons:
+    - title: Phòng tổ chức - hành chính
+      payload: /phòng tổ chức - hành chính
+    - title: Phòng tài chính - kế toán
+      payload: /phòng tài chính - kế toán
+    - title: Phòng kế hoạch - đầu tư
+      payload: /phòng kế hoạch - đầu tư
+    - title: Phòng đào tạo
+      payload: /phòng đào tạo
+    - title: Phòng quản lý khoa học và hợp tác quốc tế
+      payload: /phòng quản lý khoa học và hợp tác quốc tế
+    - title: Phòng công tác sinh viên
+      payload: /phòng công tác sinh viên
+    - title: Phòng khảo thí và đảm bảo chất lượng
+      payload: /phòng khảo thí và đảm bảo chất lượng
+    - title: Phòng quản trị
+      payload: /phòng quản trị
+    - title: Phòng dịch vụ
+      payload: /phòng dịch vụ
+    - title: Phòng quản lý ký túc xá
+      payload: /phòng quản lý ký túc xá
+    - title: Tạp chí khoa học và công nghệ
+      payload: /tạp chí khoa học và công nghệ
+    - title: Nhà xuất bản
+      payload: /nhà xuất bản
+
+#button 2.3.1
+  utter_phong_to_chuc_hanh_chinh:
+  - text: "Thông tin liên hệ: Địa chỉ: Nhà E, Trường ĐHCN TP.HCM (Số 12 Nguyễn Văn Bảo, P.4, Q. Gò Vấp, Tp. Hồ Chí Minh) Điện thoại: 0283.8940390–119 Email: ptchc@iuh.edu.vn Link tham khảo chức năng: http://iuh.edu.vn/vi/don-vi-chuc-nang-fi26/phong-to-chuc-hanh-chinh-a1158.html"
+  utter_phong_tai_chinh_ke_toan:
+  - text: "link tham khảo:http://iuh.edu.vn/vi/don-vi-chuc-nang-fi26/phong-tai-chinh-ke-toan-a1160.html"
+  utter_phong_ke_hoach_dau_tu:
+  - text: "http://iuh.edu.vn/vi/don-vi-chuc-nang-fi26/phong-ke-hoach-dau-tu-a1159.html"
+  utter_phong_dao_tao:
+  - text: "http://iuh.edu.vn/vi/don-vi-chuc-nang-fi26/phong-dao-tao-a1161.html"
+  utter_phong_quan_ly_khoa_hoc_va_hop_tac_quoc_te:
+  - text: "http://iuh.edu.vn/vi/don-vi-chuc-nang-fi26/phong-quan-ly-khoa-hoc-a1162.html"
+  utter_phong_cong_tac_sinh_vien:
+  - text: "http://iuh.edu.vn/vi/don-vi-chuc-nang-fi26/phong-cong-tac-sinh-vien-a1163.html"
+  utter_phong_khao_thi_va_dam_bao_chat_luong:
+  - text: "http://iuh.edu.vn/vi/don-vi-chuc-nang-fi26/phong-khao-thi-va-dam-bao-chat-luong-a1166.html"
+  utter_phong_quan_tri:
+  - text: "http://iuh.edu.vn/vi/don-vi-chuc-nang-fi26/phong-quan-tri-a1165.html"
+  utter_phong_dich_vu:
+  - text:  "http://iuh.edu.vn/vi/don-vi-chuc-nang-fi26/phong-dich-vu-a1167.html"
+  utter_phong_quan_ly_ky_tuc_xa:
+  - text: "http://iuh.edu.vn/vi/don-vi-chuc-nang-fi26/phong-quan-ly-ky-tuc-xa-a1169.html"
+  utter_tap_chi_khoa_hoc_va_cong_nghe:
+  - text: "http://iuh.edu.vn/vi/tap-chi-khoa-hoc-va-cong-nghe-s103.html"
+  utter_nha_xuat_ban:
+  - text: "http://iuh.edu.vn/vi/nha-xuat-ban-fi35/gioi-thieu-nha-xuat-ban-a1404.html"
+
+  utter_co_so_vat_chat:
+  - text: "http://iuh.edu.vn/vi/co-so-vat-chat-s19.html"
+
+actions:
+#button 0
+- utter_chao_hoi
+- utter_tam_biet
+- utter_chatbot_lam_gi
+- utter_thong_tin_ve_khoa
+- utter_khoa_cong_nghe_thong_tin
+- utter_thong_tin_truong
+- utter_ban_giam_hieu
+- utter_hieu_truong
+- utter_pho_hieu_truong
+- utter_phong_ban
+- utter_phong_to_chuc_hanh_chinh
+- utter_phong_tai_chinh_ke_toan
+- utter_phong_ke_hoach_dau_tu
+- utter_phong_dao_tao
+- utter_phong_quan_ly_khoa_hoc_va_hop_tac_quoc_te
+- utter_phong_cong_tac_sinh_vien
+- utter_phong_khao_thi_va_dam_bao_chat_luong
+- utter_phong_quan_tri
+- utter_phong_dich_vu
+- utter_phong_quan_ly_ky_tuc_xa
+- utter_tap_chi_khoa_hoc_va_cong_nghe
+- utter_nha_xuat_ban
+- utter_thank
+- utter_ask_name
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+
+
+
+

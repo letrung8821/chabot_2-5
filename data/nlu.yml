@@ -194,6 +194,9 @@ nlu:
 - intent: cơ sở vật chất
   examples: |
     - cơ sở vật chất
+- intent: campus
+  examples: | 
+    - campus
   
 
 #button 2.2
@@ -242,3 +245,48 @@ nlu:
 - intent: nhà xuất bản #2.3.12
   examples: | 
     - nhà xuất bản
+
+
+#button 2.7
+- intent: giữ xe
+  examples: |
+    - giữ xe
+- intent: phòng gym
+  examples: |
+    - phòng gym
+- intent: phòng trọ
+  examples: |
+    - phòng trọ
+
+  
+# TUYỂN SINH
+- intent: thời gian xét tuyển
+  examples: |
+    - thời gian xét tuyển
+- intent: mã tuyển sinh
+  examples: |
+    - mã tuyển sinh
+- intent: phương thức xét tuyển
+  examples: |
+    - phương thức xét tuyển
+- intent: điểm chuẩn
+  examples: |
+    - điểm chuẩn
+- intent: danh sách các ngành xét tuyển
+  examples: |
+    - danh sách các ngành xét tuyển
+- intent: tổ hợp môn xét tuyển
+  examples: | 
+    - tổ hợp môn xét tuyển
+- intent: chỉ tiêu tuyển sinh
+  examples: |
+    - chỉ tiêu tuyển sinh
+- intent: học phí
+  examples: | 
+    - học phí
+- intent: kênh hỗ trợ sinh viên
+  examples: |
+    - kênh hỗ trợ sinh viên
+- intent: hồ sơ xét tuyển
+  examples: | 
+    - hồ sơ xét tuyển  

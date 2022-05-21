@@ -32,6 +32,7 @@ intents:
   - ký túc xá #2.5
   - câu lạc bộ/nhóm #2.6
   - tiện ích sinh viên #2.7
+  - campus #2.8
   - cơ sở vật chất
 #button 2.2
   - hiệu trưởng #2.2.1
@@ -49,7 +50,22 @@ intents:
   - phòng quản lý ký túc xá #2.3.10
   - tạp chí khoa học và công nghệ #2.3.11
   - nhà xuất bản #2.3.12
+#button 2.7
+  - phòng gym
+  - giữ xe
+  - phòng trọ
 
+##TUYỂN SINH
+  - thời gian xét tuyển
+  - mã tuyển sinh
+  - phương thức xét tuyển
+  - điểm chuẩn
+  - danh sách các ngành xét tuyển
+  - tổ hợp môn xét tuyển
+  - chỉ tiêu tuyển sinh
+  - học phí
+  - kênh hỗ trợ tuyển sinh
+  - hồ sơ xét tuyển
 responses:
 
   utter_chao_hoi:
@@ -133,6 +149,12 @@ responses:
       payload: /tiện ích sinh viên # button 2.7
     - title: Cơ sở vật chất
       payload: /cơ sở vật chất
+    - title: Khuôn viên trường
+      payload: /campus
+
+
+  utter_co_so_vat_chat:
+  - text: "http://iuh.edu.vn/vi/co-so-vat-chat-s19.html"
 
 #button 2.2
   utter_ban_giam_hieu:
@@ -204,8 +226,87 @@ responses:
   utter_nha_xuat_ban:
   - text: "http://iuh.edu.vn/vi/nha-xuat-ban-fi35/gioi-thieu-nha-xuat-ban-a1404.html"
 
-  utter_co_so_vat_chat:
-  - text: "http://iuh.edu.vn/vi/co-so-vat-chat-s19.html"
+#button 2.7
+  utter_tien_ich_sinh_vien:
+  - text: "trong trường có những tiện ích dành cho các sinh viên như sau:"
+    buttons:
+    - title: Giữ xe
+      payload: /giữ xe
+    - title: Phòng gym
+      paylaod: /phòng gym
+    - title: Phòng trọ
+      payload: /phòng trọ
+
+  utter_giu_xe:
+  - text: "trong trường có 3 tầng gửi xe ngay cổng 1 và cổng 2, phòng việc trường hết chỗ để thì bạn có thể ra ngoài gửi:"
+    image: "https://scontent.fsgn5-13.fna.fbcdn.net/v/t1.6435-9/120635505_3398609126897736_3806156754871047710_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=730e14&_nc_ohc=BPOZCxi0NbIAX9GGfCU&_nc_ht=scontent.fsgn5-13.fna&oh=00_AT_0BEn_u8vrFzfnSSGDYsbvPTnsXSP3A9g-5-32tF3aEA&oe=62ADEAC2"
+
+  utter_phong_gym:
+  - text: "phòng thể dục đa năng tại nhà D"
+  utter_phong_tro:
+  - text: "ngoài 2 tòa ký túc xá trong trường thì mỗi khi năm học mới bắt đầu thì có một bàn được đặt ở gần chỗ tuyển sinh để giúp các bạn tìm được trọ phù hợp mà gần trường"
+
+#button 2.8
+  utter_campus:
+  - text: "nếu bạn là chiếu mới thì đây là bí kíp cho bạn, hi hi:"
+    image: "https://scontent.fsgn5-12.fna.fbcdn.net/v/t1.6435-9/67619787_2363936863698306_3232831843728359424_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=730e14&_nc_ohc=lew2vY8Q3kcAX95tgZk&_nc_ht=scontent.fsgn5-12.fna&oh=00_AT_Ogpe8bmyMyANQ4LMiQIaJj6Z7_JfqdP0hPhX3NRQAuQ&oe=62ACC49C"
+
+
+## TUYỂN SINH 
+  utter_tuyen_sinh:
+  - text: "Đây là những vấn đề mà chát bót biết về tuyển sinh"
+    buttons:
+    - title: Thời gian xét tuyển 
+      payload: /thời gian xét tuyển
+    - title: Mã tuyển sinh
+      payload: /mã tuyển sinh
+    - title: Phương thức xét tuyển
+      payload: /phương thức xét tuyển
+    - title: Điểm chuẩn
+      payload: /điểm chuẩn
+    - title: Danh sách các ngành xét tuyển
+      payload: /danh sách các ngành xét tuyển
+    - title: Tổ hợp môn xét tuyển
+      payload: /tổ hợp xét tuyển
+    - title: Chỉ tiêu tuyển sinh
+      payload: /chỉ tiêu tuyển sinh
+    - title: Học phí
+      payload: /học phí
+    - title: Kênh hỗ trợ tuyển sinh
+      payload: /kênh hỗ trợ tuyển sinh
+    - title: Hồ sơ xét tuyển 
+      payload: /hồ sơ xét tuyển
+
+  utter_thoi_gian_xet_tuyen:
+  - text: "Vì hiện tại có khá nhiều khung thời gian xét tuyển thì bạn đọc trong link này nhé: http://tuyensinh.iuh.edu.vn/"
+
+  utter_ma_tuyen_sinh:
+  - text: "Bạn tham khảo mã xét tuyển ở link này nha: http://tuyensinh.iuh.edu.vn/"
+
+  utter_phuong_thuc_xet_tuyen:
+  - text: "hiện tại có 4 phương thức xét tuyển là: <p>1. Xét tuyển thẳng</p> <p>2. Xét tuyển sử dụng kết quả học tập THPT năm lớp 12</p> <p>3. Xét tuyển sử dụng kết quả kỳ thi tốt nghiệp THPT năm 2022</p> <p>4. Xét tuyển sử dụng kết quả kỳ thi đánh giá năng lực</p>"
+
+  utter_diem_chuan:
+  - text: "hiện tại mình chưa có thông tin, sẽ cập nhật sớm cho bạn sau nha."
+
+  utter_danh_sach_cac_nganh_xet_tuyen:
+  - text: "Bạn tham khảo danh sách ở link này nha: http://tuyensinh.iuh.edu.vn/"
+
+  utter_to_hop_mon_xet_tuyen:
+  - text: "Khối A00: Toán, Vật lý, Hóa học <p>Khối A01: Toán, Tiếng Anh, Vật Lý<p/> <p>Khối B00: Toán, Hóa học, Sinh học<p/> <p>Khối D01: Toán, Ngữ Văn, Tiếng Anh<p/> <p>Khối D07: Toán, Tiếng Anh, Hóa học<p/> <p>Khối C00: Ngữ văn, Lịch sử, Địa lý<p/> <p>Khối C01: Toán, Ngữ văn, Vật lý<p/> <p>Khối C02: Toán, Ngữ văn, Hóa học<p/> <p>Khối C08: Ngữ văn, Hóa học, Sinh học<p/> <p>Khối D14: Ngữ văn, Tiếng Anh, Lịch sử<p/> <p>Khối D15: Ngữ văn, Tiếng Anh, Địa lý<p/> <p>Khối D90: Toán, Tiếng Anh, Khoa học tự nhiên<p/> <p>Khối D96: Toán, Tiếng Anh, Khoa học xã hội<p/>"
+
+  utter_chi_tieu_tuyen_sinh:
+  - text: "vì mỗi năm có chỉ tiêu khác nhau nên bạn tham khảo thêm ở link này nha: http://tuyensinh.iuh.edu.vn/"
+
+  utter_hoc_phi:
+  - text: "học phí ở trường mình khoảng 12 triệu/kỳ"
+
+  utter_kenh_ho_tro_tuyen_sinh:
+  - text: "hiện tại mình chưa có câu trả lời, sorry bạn nhiều, mình sẽ sớm nói ông chủ cập nhật liền."
+
+  utter_ho_so_xet_tuyen:
+  - text: "bạn tham khảo link này nha: http://tuyensinh.iuh.edu.vn/"
+
 
 actions:
 #button 0
@@ -233,7 +334,21 @@ actions:
 - utter_nha_xuat_ban
 - utter_thank
 - utter_ask_name
-
+- utter_giu_xe
+- utter_phong_tro
+- utter_phong_gym
+- utter_campus
+- utter_tuyen_sinh
+- utter_thoi_gian_xet_tuyen
+- utter_ma_tuyen_sinh
+- utter_phuong_thuc_xet_tuyen
+- utter_diem_chuan
+- utter_danh_sach_cac_nganh_xet_tuyen
+- utter_to_hop_mon_xet_tuyen
+- utter_chi_tieu_tuyen_sinh
+- utter_hoc_phi
+- utter_kenh_ho_tro_tuyen_sinh
+- utter_ho_so_xet_tuyen
 
 session_config:
   session_expiration_time: 60

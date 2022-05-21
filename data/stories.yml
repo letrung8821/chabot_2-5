@@ -1,7 +1,7 @@
 version: "3.1"
 
 stories:
-
+# hỏi về ban giám hiệu
 - story: hiệu trưởng - chào hỏi
   steps:
   - intent: chào hỏi
@@ -69,7 +69,7 @@ stories:
   - intent: ban giám hiệu
   - action: utter_ban_giam_hieu
   - intent: phó hiệu trưởng
-  - action: utter_pho_hieu_truongg
+  - action: utter_pho_hieu_truong
 
 - story: thông tin trường 
   steps: 
@@ -136,6 +136,8 @@ stories:
 #   - intent: không
 #   - action: utter_tam_biet
 
+
+# story về phòng ban
 - story: phòng tổ chức hành chính - chào hỏi
   steps:
   - intent: chào hỏi
@@ -492,5 +494,303 @@ stories:
   - action: utter_phong_ban
   - intent: nhà xuất bản
   - action: utter_nha_xuat_ban
+  - intent: thank
+  - action: utter_thank
+
+#story về tiện ích sinh viên
+- story: tiện ích sinh viên - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: tiện ích sinh viên
+  - action: utter_tien_ich_sinh_vien
+  - intent: thank
+  - action: utter_thank
+
+- story: tiện ích sinh viên
+  steps: 
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: tiện ích sinh viên
+  - action: utter_tien_ich_sinh_vien
+  - intent: thank
+  - action: utter_thank
+
+#story về campus (khuôn viên trường)
+- story: campus - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: campus
+  - action: utter_campus
+  - intent: thank
+  - action: utter_thank
+
+- story: campus
+  steps:
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: campus
+  - action: utter_campus
+  - intent: thank
+  - action: utter_thank
+
+## TUYỂN SINH
+
+#story về thời gian xét tuyển
+- story: thời gian xét tuyển chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: tuyển sinh
+  - action: utter_tuyen_sinh
+  - intent: thời gian xét tuyển
+  - action: utter_thoi_gian_xet_tuyen
+  - intent: thank
+  - action: utter_thank
+
+- story: thời gian xét tuyển 
+  steps: 
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: tuyển sinh
+  - action: utter_tuyen_sinh
+  - intent: thank
+  - action: utter_thank
+
+#story về mã tuyển sinh
+- story: mã tuyển sinh - chảo hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: tuyển sinh
+  - action: utter_tuyen_sinh
+  - intent: mã tuyển sinh
+  - action: utter_ma_tuyen_sinh
+  - intent: thank
+  - action: utter_thank
+
+- story: mã tuyển sinh
+  steps:
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: tuyển sinh
+  - action: utter_tuyen_sinh
+  - intent: mã tuyển sinh
+  - action: utter_ma_tuyen_sinh
+  - intent: thank
+  - action: utter_thank
+
+#story về điểm chuẩn
+- story: điểm chuẩn - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: tuyển sinh
+  - action: utter_tuyen_sinh
+  - intent: điểm chuẩn
+  - action: utter_diem_chuan
+  - intent: thank
+  - action: utter_thank
+
+- story: điểm chuẩn
+  steps:   
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: tuyển sinh
+  - action: utter_tuyen_sinh
+  - intent: điểm chuẩn
+  - action: utter_diem_chuan
+  - intent: thank
+  - action: utter_thank
+
+
+#story về danh sách các ngành xét tuyển:
+- story: danh sách các ngành xét tuyển - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: tuyển sinh
+  - action: utter_tuyen_sinh
+  - intent: danh sách các ngành xét tuyển
+  - action: utter_danh_sach_cac_nganh_xet_tuyen
+  - intent: thank
+  - action: utter_thank
+
+- story: danh sách các ngành xét tuyển
+  steps:
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: tuyển sinh
+  - action: utter_tuyen_sinh
+  - intent: danh sách các ngành xét tuyển
+  - action: utter_danh_sach_cac_nganh_xet_tuyen
+  - intent: thank
+  - action: utter_thank
+
+#story về tổ hợp môn xét tuyển
+- story: tổ hợp môn xét tuyển - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: tuyển sinh
+  - action: utter_tuyen_sinh
+  - intent: tổ hợp môn xét tuyển
+  - action: utter_to_hop_mon_xet_tuyen
+  - intent: thank
+  - action: utter_thank
+
+- story: tổ hợp môn xét tuyển
+  steps:
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: tuyển sinh
+  - action: utter_tuyen_sinh
+  - intent: tổ hợp môn xét tuyển
+  - action: utter_to_hop_mon_xet_tuyen
+  - intent: thank
+  - action: utter_thank
+
+#story về chỉ tiêu tuyển sinh
+- story: chỉ tiêu tuyển sinh - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: tuyển sinh
+  - action: utter_tuyen_sinh
+  - intent: chỉ tiêu tuyển sinh
+  - action: utter_chi_tieu_tuyen_sinh
+  - intent: thank
+  - action: utter_thank
+
+- story: chỉ tiêu tuyển sinh
+  steps:
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: tuyển sinh
+  - action: utter_tuyen_sinh
+  - intent: chỉ tiêu tuyển sinh
+  - action: utter_chi_tieu_tuyen_sinh 
+  - intent: thank
+  - action: utter_thank
+
+#story học phí
+- story: học phí - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: tuyển sinh
+  - action: utter_tuyen_sinh
+  - intent: học phí
+  - action: utter_hoc_phi
+  - intent: thank
+  - action: utter_thank
+
+- story: học phí
+  steps:
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: tuyển sinh
+  - action: utter_tuyen_sinh
+  - intent: học phí
+  - action: utter_hoc_phi
+  - intent: thank
+  - action: utter_thank
+
+#story về kênh hỗ trợ tuyển sinh
+- story: kênh hỗ trợ tuyển sinh - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: tuyển sinh
+  - action: utter_tuyen_sinh
+  - intent: kênh hỗ trợ tuyển sinh
+  - action: utter_kenh_ho_tro_tuyen_sinh
+  - intent: thank
+  - action: utter_thank
+
+- story: kênh hộ trợ tuyển sinh
+  steps:
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: tuyển sinh
+  - action: utter_tuyen_sinh
+  - intent: kênh hỗ trợ tuyển sinh
+  - action: utter_kenh_ho_tro_tuyen_sinh
+  - intent: thank
+  - action: utter_thank
+
+#story hồ sơ xét tuyển
+- story: hồ sơ xét tuyển - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: tuyển sinh
+  - action: utter_tuyen_sinh
+  - intent: hồ sơ xét tuyển
+  - action: utter_ho_so_xet_tuyen
+  - intent: thank
+  - action: utter_thank
+
+- story: hồ sơ xét tuyển
+  steps:
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: tuyển sinh
+  - action: utter_tuyen_sinh
+  - intent: hồ sơ xét tuyển
+  - action: utter_ho_so_xet_tuyen
   - intent: thank
   - action: utter_thank

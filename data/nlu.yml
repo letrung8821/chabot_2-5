@@ -290,3 +290,26 @@ nlu:
 - intent: hồ sơ xét tuyển
   examples: | 
     - hồ sơ xét tuyển  
+
+## HỌC VỤ
+- intent: chương trình khung
+  examples: |
+    - chương trình khung
+- intent: đăng ký học phần
+  examples: |
+    - đăng ký học phần
+- intent: chuẩn đầu ra chuyên ngành 
+  examples: |
+    - chuẩn đầu ra chuyên ngành
+
+- intent: chèn lớp học phần
+  examples: | 
+    - chèn lớp học phần
+- intent: mở lớp học phần
+  examples: |
+    - mở lớp học phần
+- intent: hủy lớp học phần
+  examples: |
+    - hủy lớp học phần
+
+  

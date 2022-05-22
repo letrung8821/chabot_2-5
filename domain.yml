@@ -66,6 +66,15 @@ intents:
   - học phí
   - kênh hỗ trợ tuyển sinh
   - hồ sơ xét tuyển
+
+##HỌC VỤ
+  - đăng ký học phần
+  - chương trình khung
+  - chuẩn đầu ra chuyên ngành
+  - chèn lớp học phần
+  - mở lớp học phần
+  - hủy lớp học phần
+
 responses:
 
   utter_chao_hoi:
@@ -171,8 +180,8 @@ responses:
   utter_pho_hieu_truong:
   - text: "GS-TS. Lê Văn Tán, PGS-TS. Đào Sao Mai, TS. Nguyễn Xuân Hồng"
 
-#button 2.3
-  utter_phong_ban:
+#button 2.3 utter phòng ban để hiển thị ra các khung gợi ý
+  utter_phong_ban: 
   - text: "phòng ban"
     buttons:
     - title: Phòng tổ chức - hành chính
@@ -200,7 +209,7 @@ responses:
     - title: Nhà xuất bản
       payload: /nhà xuất bản
 
-#button 2.3.1
+#button 2.3.1 utter các phòng ban
   utter_phong_to_chuc_hanh_chinh:
   - text: "Thông tin liên hệ: Địa chỉ: Nhà E, Trường ĐHCN TP.HCM (Số 12 Nguyễn Văn Bảo, P.4, Q. Gò Vấp, Tp. Hồ Chí Minh) Điện thoại: 0283.8940390–119 Email: ptchc@iuh.edu.vn Link tham khảo chức năng: http://iuh.edu.vn/vi/don-vi-chuc-nang-fi26/phong-to-chuc-hanh-chinh-a1158.html"
   utter_phong_tai_chinh_ke_toan:
@@ -307,6 +316,43 @@ responses:
   utter_ho_so_xet_tuyen:
   - text: "bạn tham khảo link này nha: http://tuyensinh.iuh.edu.vn/"
 
+#button học vụ
+  utter_hoc_vu:
+  - text: "Sau đây là những điều mà chát bót biết về học vụ"
+    buttons:
+    - title: Chương trình khung
+      payload: /chương trình khung
+    - title: Đăng ký học phần
+      payload: /đăng ký học phần
+    - title: Chuẩn đầu ra chuyên ngành
+      payload: /chuẩn đầu ra chuyên ngành
+
+  utter_dang_ky_hoc_phan:
+  - text: "bạn hãy chọn thông tin mà bạn cần tìm hiểu:"
+    buttons:
+    - title: Chèn lớp học phần
+      payload: /chèn lớp học phần
+    - title: Mở lớp học phần
+      payload: /mở lớp học phần
+    - title: Hủy lớp học phần
+      payload: /hủy lớp học phần
+    
+  utter_chuong_trinh_khung:
+  - text: "bạn tham khảo link này nha: https://dkhp.iuh.edu.vn/ChuongTrinhKhung"
+
+  utter_chuan_dau_ra_chuyen_nganh:
+  - text: "Mình chưa có câu trả lời cho trường hợp này"
+
+  utter_chen_lop_hoc_phan:
+  - text: "bạn có thể liên vệ với văn phòng khoa bạn đang học để chèn lớp học phần trong trường hợp bạn không kịp đăng kí và không còn lớp khác mở"
+
+  utter_mo_lop_hoc_phan: 
+  - text: "bạn có thể liên hệ với giáo viên hoặc tìm tìm đủ số lượng sinh viên muốn đăng kí rồi tổng hợp lại và lên văn phòng khoa để đăng kí mở lớp, bình thường thì cũng đã có những lớp mở sẵn rồi, bạn chỉ việc vào đăng kí thôi."
+
+  utter_huy_lop_hoc_phan: 
+  - text: "bạn có thể hủy lớp học phần trong trường hợp bạn bị trùng lịch với môn đặc biệt chỉ mở 1 kỳ, bạn có thể đến văn phòng khoa để xin hủy lớp học phần đã đăng ký."
+
+
 
 actions:
 #button 0
@@ -320,6 +366,7 @@ actions:
 - utter_hieu_truong
 - utter_pho_hieu_truong
 - utter_phong_ban
+#button phòng ban
 - utter_phong_to_chuc_hanh_chinh
 - utter_phong_tai_chinh_ke_toan
 - utter_phong_ke_hoach_dau_tu
@@ -334,10 +381,13 @@ actions:
 - utter_nha_xuat_ban
 - utter_thank
 - utter_ask_name
+#button tiện ích sinh viên
 - utter_giu_xe
 - utter_phong_tro
 - utter_phong_gym
+#button khuôn viên trường
 - utter_campus
+#button tuyển sinh
 - utter_tuyen_sinh
 - utter_thoi_gian_xet_tuyen
 - utter_ma_tuyen_sinh
@@ -349,6 +399,15 @@ actions:
 - utter_hoc_phi
 - utter_kenh_ho_tro_tuyen_sinh
 - utter_ho_so_xet_tuyen
+#button học vụ
+- utter_dang_ky_hoc_phan
+- utter_hoc_vu
+- utter_chuong_trinh_khung
+- utter_chuan_dau_ra_chuyen_nganh
+- utter_chen_lop_hoc_phan
+- utter_mo_lop_hoc_phan
+- utter_huy_lop_hoc_phan
+
 
 session_config:
   session_expiration_time: 60

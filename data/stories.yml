@@ -129,12 +129,12 @@ stories:
   - action: utter_co_so_vat_chat
 
 #story gọi lại
-# - story: gọi lại
-#   steps:
-#   - intent: có
-#   - action: utter_chatbot_lam_gi
-#   - intent: không
-#   - action: utter_tam_biet
+- story: gọi lại
+  steps:
+  - intent: có
+  - action: utter_chatbot_lam_gi
+  - intent: không
+  - action: utter_tam_biet
 
 
 # story về phòng ban
@@ -792,5 +792,154 @@ stories:
   - action: utter_tuyen_sinh
   - intent: hồ sơ xét tuyển
   - action: utter_ho_so_xet_tuyen
+  - intent: thank
+  - action: utter_thank
+
+## HỌC VỤ
+
+#chương trình khung
+- story: chương trình khung - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: học vụ
+  - action: utter_hoc_vu
+  - intent: chương trình khung
+  - action: utter_chuong_trinh_khung
+  - intent: thank
+  - action: utter_thank
+
+- story: chương trình khung 
+  steps: 
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: học vụ
+  - action: utter_hoc_vu
+  - intent: chương trình khung
+  - action: utter_chuong_trinh_khung
+  - intent: thank
+  - action: utter_thank
+
+# chuẩn đầu ra chuyên ngành
+- story: chuẩn đầu ra chuyên ngành - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: học vụ
+  - action: utter_hoc_vu
+  - intent: chuẩn đầu ra chuyên ngành
+  - action: utter_chuan_dau_ra_chuyen_nganh
+  - intent: thank
+  - action: utter_thank
+
+- story: chuẩn đầu ra chuyên ngành
+  steps: 
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: học vụ
+  - action: utter_hoc_vu
+  - intent: chuẩn đầu ra chuyên ngành
+  - action: utter_chuan_dau_ra_chuyen_nganh
+  - intent: thank
+  - action: utter_thank
+
+#chèn lớp học phần:
+- story: chèn lớp học phần - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: học vụ
+  - action: utter_hoc_vu
+  - intent: đăng ký học phần
+  - action: utter_dang_ky_hoc_phan
+  - intent: chèn lớp học phần
+  - action: utter_chen_lop_hoc_phan
+  - intent: thank
+  - action: utter_thank
+
+- story: chèn lớp học phần
+  steps: 
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: học vụ
+  - action: utter_hoc_vu
+  - intent: đăng ký học phần
+  - action: utter_dang_ky_hoc_phan
+  - intent: chèn lớp học phần
+  - action: utter_chen_lop_hoc_phan
+  - intent: thank
+  - action: utter_thank
+
+#mở lớp học phần
+- story: mở lớp học phần - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: học vụ
+  - action: utter_hoc_vu
+  - intent: đăng ký học phần
+  - action: utter_dang_ky_hoc_phan
+  - intent: mở lớp học phần
+  - action: utter_mo_lop_hoc_phan
+  - intent: thank
+  - action: utter_thank
+
+- story: mở lớp học phần
+  steps: 
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: học vụ
+  - action: utter_hoc_vu
+  - intent: đăng ký học phần
+  - action: utter_dang_ky_hoc_phan
+  - intent: mở lớp học phần
+  - action: utter_mo_lop_hoc_phan
+  - intent: thank
+  - action: utter_thank
+
+#hủy lớp học phần
+- story: hủy lớp học phần - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: học vụ
+  - action: utter_hoc_vu
+  - intent: đăng ký học phần
+  - action: utter_dang_ky_hoc_phan
+  - intent: hủy lớp học phần
+  - action: utter_huy_lop_hoc_phan
+  - intent: thank
+  - action: utter_thank
+
+- story: hủy lớp học phần
+  steps: 
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: học vụ
+  - action: utter_hoc_vu
+  - intent: đăng ký học phần
+  - action: utter_dang_ky_hoc_phan
+  - intent: hủy lớp học phần
+  - action: utter_huy_lop_hoc_phan
   - intent: thank
   - action: utter_thank

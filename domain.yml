@@ -75,6 +75,11 @@ intents:
   - mở lớp học phần
   - hủy lớp học phần
 
+## CÔNG TÁC SINH VIÊN
+  - thủ tục nhập học
+  - giấy vay vốn sinh viên
+  - giấy xác nhận sinh viên
+  - cập nhập thông tin sinh viên
 responses:
 
   utter_chao_hoi:
@@ -161,7 +166,9 @@ responses:
     - title: Khuôn viên trường
       payload: /campus
 
-
+  utter_lich_su_phat_trien: 
+  - text: "Tiền thân của Trường Đại học Công nghiệp thành phố Hồ Chí Minh là Trường Huấn nghiệp Gò Vấp do các tu sĩ dòng Don Bosco thành lập 11/11/1956 tại xã Hạnh Thông, Quận Gò Vấp, Tỉnh Gia Định. Năm 1968, Trường được đổi tên thành Trường tư thục Trung học Kỹ thuật đệ nhất cấp Don Bosco."
+  
   utter_co_so_vat_chat:
   - text: "http://iuh.edu.vn/vi/co-so-vat-chat-s19.html"
 
@@ -252,6 +259,7 @@ responses:
 
   utter_phong_gym:
   - text: "phòng thể dục đa năng tại nhà D"
+
   utter_phong_tro:
   - text: "ngoài 2 tòa ký túc xá trong trường thì mỗi khi năm học mới bắt đầu thì có một bàn được đặt ở gần chỗ tuyển sinh để giúp các bạn tìm được trọ phù hợp mà gần trường"
 
@@ -353,6 +361,30 @@ responses:
   - text: "bạn có thể hủy lớp học phần trong trường hợp bạn bị trùng lịch với môn đặc biệt chỉ mở 1 kỳ, bạn có thể đến văn phòng khoa để xin hủy lớp học phần đã đăng ký."
 
 
+##  CÔNG TÁC SINH VIÊN
+  utter_cong_tac_sinh_vien:
+  - text: "Sau đây là những điều mình biết về công tác sinh viên"
+    buttons: 
+    - title: Cập nhập thông tin sinh viên
+      payload: /cập nhập thông tin sinh viên
+    - title: Giấy xác nhận sinh viên
+      payload: /giấy xác nhận sinh viên
+    - title: Giấy vay vốn sinh viên
+      payload: /giấy vay vốn sinh viên
+    - title: Thủ tục nhập học 
+      payload: /thủ tục nhập học
+
+  utter_cap_nhap_thong_tin_sinh_vien:
+  - text: "bạn có thể tham khảo thông tin ở trang sinh viên iuh: https://sv.iuh.edu.vn/dashboard.html"
+
+  utter_giay_xac_nhan_sinh_vien:
+  - text: "Bạn có thể đến tầng hầm nhà D để liên hệ và xin giấy xác nhận"
+
+  utter_giay_vay_von_sinh_vien:
+  - text: "Nhà trường không cho vay vốn. Nếu em có nhu cầu, đến Phòng Công tác sinh viên xin cấp giấy xác nhận sinh viên và mẫu đơn vay vốn, sau đó liên hệ ngân hàng chính sách địa phương để được hướng dẫn làm thủ tục và giải quyết cho vay"
+
+  utter_thu_tuc_nhap_hoc:
+  - text: "Bạn vui lòng tham khảo linh này nha: https://iuhers.com/news/de-lam-thu-tuc-nhap-hoc-dai-hoc-tai-iuh-can-nhung-gi.html"
 
 actions:
 #button 0
@@ -366,6 +398,7 @@ actions:
 - utter_hieu_truong
 - utter_pho_hieu_truong
 - utter_phong_ban
+- utter_lich_su_phat_trien
 #button phòng ban
 - utter_phong_to_chuc_hanh_chinh
 - utter_phong_tai_chinh_ke_toan
@@ -407,8 +440,13 @@ actions:
 - utter_chen_lop_hoc_phan
 - utter_mo_lop_hoc_phan
 - utter_huy_lop_hoc_phan
-
-
+#button công tác sinh viên
+- utter_cap_nhap_thong_tin_sinh_vien
+- utter_giay_xac_nhan_sinh_vien
+- utter_giay_vay_von_sinh_vien
+- utter_thu_tuc_nhap_hoc
+ 
+ 
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true

@@ -1,7 +1,42 @@
 version: "3.1"
 
 stories:
-# hỏi về ban giám hiệu
+## lịch sử phát triển
+- story: lịch sử phát triển - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: lịch sử phát triển
+  - action: utter_lich_su_phat_trien
+  - intent: thank
+  - action: utter_thank
+
+- story: lịch sử phát triển
+  steps: 
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: lịch sử phát triển
+  - action: utter_lich_su_phat_trien
+  - intent: thank
+  - action: utter_thank
+
+- story: lịch sử phát triển
+  steps: 
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+  - intent: lịch sử phát triển
+  - action: utter_lich_su_phat_trien
+
+## hỏi về ban giám hiệu
+#hỏi về hiệu trưởng
 - story: hiệu trưởng - chào hỏi
   steps:
   - intent: chào hỏi
@@ -20,7 +55,8 @@ stories:
   - action: utter_thank
   - intent: tạm biệt
   - action: utter_tam_biet
-
+ 
+ #hỏi về phó hiệu trưởng
 - story: phó hiệu trưởng - chào hỏi
   steps:
   - intent: chào hỏi
@@ -40,7 +76,9 @@ stories:
   - intent: tạm biệt
   - action: utter_tam_biet
 
-- story: thông tin trường
+
+# story ban giám hiệu
+- story: ban giám hiệu
   steps: 
   - intent: chatbot làm gì
   - action: utter_chatbot_lam_gi
@@ -49,6 +87,7 @@ stories:
   - intent: ban giám hiệu
   - action: utter_ban_giam_hieu
 
+#story hiệu trưởng không chào hỏi
 - story: hiệu trưởng
   steps:
   - intent: chatbot làm gì
@@ -60,6 +99,7 @@ stories:
   - intent: hiệu trưởng
   - action: utter_hieu_truong
 
+#story phó hiệu trưởng không chào hỏi
 - story: phó hiệu trưởng
   steps:
   - intent: chatbot làm gì
@@ -943,3 +983,164 @@ stories:
   - action: utter_huy_lop_hoc_phan
   - intent: thank
   - action: utter_thank
+
+#story gọi thẳng thông tin trường
+- story: thông tin trường
+  steps: 
+  - intent: thông tin trường
+  - action: utter_thong_tin_truong
+
+- story: thông tin về khoa
+  steps: 
+  - intent: thông tin về khoa
+  - action: utter_thong_tin_ve_khoa
+
+- story: ban giám hiệu
+  steps: 
+  - intent: ban giám hiệu
+  - action: utter_ban_giam_hieu
+
+- story: phòng ban
+  steps: 
+  - intent: phòng ban
+  - action: utter_phong_ban
+
+## công tác sinh viên
+
+#cập nhập thông tin sinh viên
+- story: cập nhập thông tin sinh viên - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: công tác sinh viên
+  - action: utter_cong_tac_sinh_vien
+  - intent: cập nhập thông tin sinh viên
+  - action: utter_cap_nhap_thong_tin_sinh_vien
+  - intent: thank
+  - action: utter_thank
+
+- story: cập nhập thông tin sinh viên
+  steps:
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: công tác sinh viên
+  - action: utter_cong_tac_sinh_vien
+  - intent: cập nhập thông tin sinh viên
+  - action: utter_cap_nhap_thong_tin_sinh_vien
+  - intent: thank
+  - action: utter_thank
+
+- story: cập nhập thông tin sinh viên 
+  steps: 
+  - intent: công tác sinh viên
+  - action: utter_cong_tac_sinh_vien
+  - intent: cập nhập thông tin sinh viên
+  - action: utter_cap_nhap_thong_tin_sinh_vien
+
+# giấy xác nhận sinh viên
+- story: giấy xác nhận sinh viên - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: công tác sinh viên
+  - action: utter_cong_tac_sinh_vien
+  - intent: giấy xác nhận sinh viên
+  - action: utter_giay_xac_nhan_sinh_vien
+  - intent: thank
+  - action: utter_thank
+
+- story: giấy xác nhận sinh viên
+  steps: 
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: công tác sinh viên
+  - action: utter_cong_tac_sinh_vien
+  - intent: giấy xác nhận sinh viên
+  - action: utter_giay_xac_nhan_sinh_vien
+  - intent: thank
+  - action: utter_thank
+
+- story: giấy xác nhận sinh viên 
+  steps: 
+  - intent: công tác sinh viên
+  - action: utter_cong_tac_sinh_vien
+  - intent: giấy xác nhận sinh viên
+  - action: utter_giay_xac_nhan_sinh_vien
+  - intent: thank
+  - action: utter_thank
+
+#giấy vay vốn sinh viên
+- story: giấy vay vốn sinh viên - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: công tác sinh viên
+  - action: utter_cong_tac_sinh_vien
+  - intent: giấy vay vốn sinh viên
+  - action: utter_giay_vay_von_sinh_vien
+  - intent: thank
+  - action: utter_thank
+
+- story: giấy vay vốn sinh viên
+  steps: 
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: công tác sinh viên
+  - action: utter_cong_tac_sinh_vien
+  - intent: giấy vay vốn sinh viên
+  - action: utter_giay_vay_von_sinh_vien
+  - intent: thank
+  - action: utter_thank
+
+- story: giấy vay vốn sinh viên
+  steps: 
+  - intent: công tác sinh viên
+  - action: utter_cong_tac_sinh_vien
+  - intent: giấy vay vốn sinh viên
+  - action: utter_giay_vay_von_sinh_vien
+
+# thủ tục nhập học
+- story: thủ tục nhập học - chào hỏi
+  steps: 
+  - intent: chào hỏi
+  - action: utter_chao_hoi
+  - intent: ask name
+  - action: utter_ask_name
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: công tác sinh viên
+  - action: utter_cong_tac_sinh_vien
+  - intent: thủ tục nhập học
+  - action: utter_thu_tuc_nhap_hoc
+  - intent: thank
+  - action: utter_thank
+
+- story: thủ tục nhập học
+  steps: 
+  - intent: chatbot làm gì
+  - action: utter_chatbot_lam_gi
+  - intent: công tác sinh viên
+  - action: utter_cong_tac_sinh_vien
+  - intent: thủ tục nhập học
+  - action: utter_thu_tuc_nhap_hoc
+  - intent: thank
+  - action: utter_thank
+
+- story: thủ tục nhập học
+  steps: 
+  - intent: công tác sinh viên
+  - action: utter_cong_tac_sinh_vien
+  - intent: thủ tục nhập học
+  - action: utter_thu_tuc_nhap_hoc

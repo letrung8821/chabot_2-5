@@ -312,4 +312,16 @@ nlu:
   examples: |
     - hủy lớp học phần
 
-  
+# công tác sinh viên
+- intent: cập nhập thông tin sinh viên
+  examples: |
+    - cập nhập thông tin sinh viên
+- intent: giấy xác nhận sinh viên
+  examples: |
+    - giấy xác nhận sinh viên
+- intent: giấy vay vốn sinh viên
+  examples: |
+    - giấy vay vốn sinh viên
+- intent: thủ tục nhập học
+  examples: |
+    - thủ tục nhập học

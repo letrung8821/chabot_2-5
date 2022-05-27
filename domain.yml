@@ -66,6 +66,11 @@ intents:
   - học phí
   - kênh hỗ trợ tuyển sinh
   - hồ sơ xét tuyển
+  - phương thức xét tuyển - học bạ
+  - phương thức xét tuyển - kỳ thi năng lực
+  - phương thức xét tuyển - tuyển thẳng
+  - những phương thức xét tuyển
+  - cách nộp hồ sơ
 
 ##HỌC VỤ
   - đăng ký học phần
@@ -249,7 +254,7 @@ responses:
     - title: Giữ xe
       payload: /giữ xe
     - title: Phòng gym
-      paylaod: /phòng gym
+      payload: /phòng gym
     - title: Phòng trọ
       payload: /phòng trọ
 
@@ -301,7 +306,16 @@ responses:
   - text: "Bạn tham khảo mã xét tuyển ở link này nha: http://tuyensinh.iuh.edu.vn/"
 
   utter_phuong_thuc_xet_tuyen:
-  - text: "hiện tại có 4 phương thức xét tuyển là: <p>1. Xét tuyển thẳng</p> <p>2. Xét tuyển sử dụng kết quả học tập THPT năm lớp 12</p> <p>3. Xét tuyển sử dụng kết quả kỳ thi tốt nghiệp THPT năm 2022</p> <p>4. Xét tuyển sử dụng kết quả kỳ thi đánh giá năng lực</p>"
+  - text: "Hiện tại có 4 phương thức xét tuyển là: <p>1. Xét tuyển thẳng</p> <p>2. Xét tuyển sử dụng kết quả học tập THPT năm lớp 12</p> <p>3. Xét tuyển sử dụng kết quả kỳ thi tốt nghiệp THPT năm 2022</p> <p>4. Xét tuyển sử dụng kết quả kỳ thi đánh giá năng lực</p>"
+
+  utter_phuong_thuc_xet_tuyen_hoc_ba:
+  - text: "Theo bót biết thì trường IUH có sử dụng điểm học bạ để xét tuyển ạ"
+
+  utter_phuong_thuc_xet_tuyen_ky_thi_nang_luc:
+  - text: "Theo những gì mà Bót được dạy thì trường IUH có sử dụng điểm kỳ thi năng lực để xét tuyển ạ"
+
+  utter_phuong_thuc_xet_tuyen_tuyen_thang: 
+  - text: "Theo thông tin mà Bót nghe được thì trường IUH có phương thức xét tuyển thẳng"
 
   utter_diem_chuan:
   - text: "hiện tại mình chưa có thông tin, sẽ cập nhật sớm cho bạn sau nha."
@@ -316,7 +330,7 @@ responses:
   - text: "vì mỗi năm có chỉ tiêu khác nhau nên bạn tham khảo thêm ở link này nha: http://tuyensinh.iuh.edu.vn/"
 
   utter_hoc_phi:
-  - text: "học phí ở trường mình khoảng 12 triệu/kỳ"
+  - text: "học phí ở trường mình khoảng 12 triệu/kỳ với hệ Đại trà, còn với hệ Chất lượng cao thì khoảng 15 triệu/kỳ."
 
   utter_kenh_ho_tro_tuyen_sinh:
   - text: "hiện tại mình chưa có câu trả lời, sorry bạn nhiều, mình sẽ sớm nói ông chủ cập nhật liền."

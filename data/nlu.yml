@@ -121,7 +121,7 @@ nlu:
     - không cần nữa đâu ạ
     - vậy được rồi
 
-#button 0
+#button 0 chatbot có thể làm gì
 - intent: thông tin trường
   examples: |
     - thông tin trường
@@ -139,7 +139,7 @@ nlu:
     - tuyển sinh
 
 
-#button 1
+#button 1 các khoa
 - intent: khoa công nghệ thông tin #button1.1
   examples: |
     - khoa công nghệ thông tin
@@ -151,7 +151,7 @@ nlu:
     - không phải 2 khoa trên 
 
 
-#button 1.1
+#button 1.1  KHOA
 - intent: đội ngũ giảng viên #button 1.1.1
   examples: |
     - đội ngũ giảng viên 
@@ -169,7 +169,7 @@ nlu:
     - giáo vụ
 
 
-# button 2
+# button 2 thông tin trường
 - intent: lịch sử phát triển #2.1
   examples: | 
     - lịch sử phát triển
@@ -199,7 +199,7 @@ nlu:
     - campus
   
 
-#button 2.2
+#button 2.2 ban giám hiệu
 - intent: hiệu trưởng #2.2.1
   examples: |
     - hiệu trưởng
@@ -208,7 +208,7 @@ nlu:
     - phó hiệu trưởng
 
 
-#button 2.3
+#button 2.3 những phòng ban iuh
 - intent: phòng tổ chức - hành chính #2.3.1
   examples: |
     - phòng tổ chức - hành chính
@@ -247,7 +247,7 @@ nlu:
     - nhà xuất bản
 
 
-#button 2.7
+#button 2.7 tiện ích sinh viên
 - intent: giữ xe
   examples: |
     - giữ xe
@@ -290,6 +290,96 @@ nlu:
 - intent: hồ sơ xét tuyển
   examples: | 
     - hồ sơ xét tuyển  
+
+- intent: phương thức xét tuyển - học bạ
+  examples: |
+    - trường mình có xét tuyển học bạ không ạ
+    - ad ơi cho em hỏi trường mình có xét tuyển học bạ không ạ?
+    - iuh có xét tuyển học bạ không?
+    - Đại học Công Nghiệp Thành phố Hồ Chí Minh có xét tuyển học bạ không ?
+    - ad ơi trường mình có xét tuyển học bạ không ạ
+    - anh chị ơi cho em hỏi là năm 2022 trường mình có xét tuyển học bạ không ạ?
+    - trường IUH có xử dụng kết quả học bạ lớp 12 không?
+    - admin ơi trường mình có sử dụng phương thức xét tuyển học bạ không?
+    - trường mình có sử dụng điểm lớp 12 không?
+    - admin ơi trường mình có sử dụng điểm lớp 12 để xét tuyển không
+    - trường mình có sử dụng phương thức xét tuyển học bạ không
+    
+- intent: phương thức xét tuyển - kỳ thi năng lực
+  examples: |  
+    - iuh có xét điểm kỳ thi năng lực không?
+    - trường Đại học Công Nghiệp Thành phố Hồ Chí Minh có xét tuyển điểm thi đánh giá năng lực không?
+    - ad ơi cho em hỏi là trường mình có xét tuyển điểm thi đánh giá năng lực không ạ?
+    - admin ơi cho em hỏi là trường mình có sử dụng kết quả kì thi đánh giá năng lực để xét tuyển không ạ?
+    - mọi người ơi cho em hỏi là trường mình có xét tuyển điểm kỳ thi đánh giá năng lực không ạ?
+    - admin cho hỏi trưởng mình có sử dụng điểm kỳ thi năng lực để xét tuyển không
+    - trường iuh có dùng kỳ thi năng lực để xét tuyển không
+    - iuh có dùng điểm kỳ thi năng lực để xét tuyển không
+    - điểm kỳ thi năng lực có được dùng không ạ
+    - em có đăng ký kỳ thi năng lực thì có dược xét tuyển vfaof trường không ạ
+    - trường mình có dùng điểm kỳ thi năng lực để đánh giá và xét tuyển không ạ?
+    - ad cho em hỏi là trường mình có dùng điểm kỳ thi đánh giá năng lực không
+    - trường mình có áp dụng xét tuyển bằng kỳ thi năng lực không ạ?
+    - ad cho hỏi là trường có áp dụng xét tuyển bằng điểm kỳ thi đánh giá năng lực không
+  
+- intent: phương thức tuyển sinh - tuyển thẳng
+  examples: | 
+    - iuh có xét tuyển thẳng không ạ?
+    - trường đại học công nghiệp thành phố hồ chí minh có xét tuyển thẳng không?
+    - ad ơi cho em hỏi là trường mình có sử dụng phương thức xét tuyển thẳng không ạ?
+    - cho hỉ là trường có xét tuyển thẳng không
+    - anh cho em hỏi là trường có xét tuyển thẳng không ạ
+    - bót ơi cho mình hỏi là trường có sử dụng phương thức xét tuyển thẳng không
+    - trường mình có sử dụng phương thức xét tuyển thằng không ạ
+    - admin ơi, trường mình có sử dụng phương thức xét tuyển thằng không ạ
+    - ad, cho hỏi trường iuh có sử dụng phương thức xét tuyển thẳng không
+    - bên mình có sử dụng phương thức xét tuyển thẳng không
+    - iuh có dùng phương thức xét tuyển thẳng không ạ
+    - trường mình có xét tuyển thẳng không
+    - iuh có xét tuyển thẳng không
+    - iuh có xét tuyển thẳng không ạ?
+    - trường iuh có xét tuyển thẳng không ạ?
+    - bên trường mình có sử dụng phương thức xét tuyển thẳng không ad
+    - trường iuh có dùng phương thức xét tuyển thẳng không?
+    - iuh có xét tuyển thẳng không ?
+    - mọi người cho em hỏi là trường mình có sử dụng phương thức xét tuyển thẳng không ạ?
+    - bên trường mình có sử dụng phương thức xét tuyển thẳng không ạ?
+  
+- intent: phương thức xét tuyển
+  examples: |
+    - iuh có những phương thức xét tuyển nào
+    - trường mình có những phương thức xét tuyển nào ạ
+    - ad cho em hỏi là trường mình có những phương thức xét tuyển nào ạ
+    - admin ơi cho em hỏi là trường mình có những phương thức xét tuyển nào ạ
+    - ad cho hỏi trường mình có những phương thức xét tuyển nào
+    - trường mình sử dụng những phương thức xét tuyển nào ạ
+    - ad ơi, trường mình sử dụng những phương thức xét tuyển nào
+    - ad cho em hỏi là trường mình sử ụng những phương thức xét tuyển nào
+    - ad cho em biết là trường mình sử dụng những phương thức xét tuyển nào được không ạ?
+    - trường iuh có những phương thức xét tuyển nào
+    - phương thức xét tuyển của iuh bao gồm những gì
+    - có bao nhiêu phương thức xét tuyển ở iuh
+    - ad cho em hỏi là iuh có bao nhiêu phương thức xét tuyển ạ
+    - admin cho em hỏi là iuh có bao nhiêu phương thức xét tuyển
+    - cho hỏi iuh có boa nhiêu phương thức xét tuyển
+    - trường iuh có bao nhiêu phương thức xét tuyển
+    - những phương thức xét tuyển của iuh là gì
+    - iuh có bao nhiêu phương thức xét tuyển
+    - bót cho mình hỏi iuh có những phương thức xét tuyển nào
+    - bot ơi cho mình hỏi iuh có những phương thức xét tuyển nào thế
+    - bót ơi cho hỏi trường mình có những phương thức xét tuyển nào
+    - bót ơi cho mình hỏi trường mình có bao nhiêu phương thức xét tuyển thế ạ
+    - bót ơi trường mình có bao nhiêu phương thức xét tuyển
+
+- intent: cách nộp hồ sơ
+  examples: |
+    - anh chị ơi cho em hỏi là trường mình có những cách nộp hồ sơ nào ạ?
+    - ad ơi cho em hỏi là trường mình có những cách nộp hồ sơ nào ạ ?
+    - admin ơi cho em hỏi là mình có những cách nộp hồ sơ nào ạ?
+    - mọi người ơi, cho em hỏi là em muốn nộp hồ sơ vào trường mình thì có những hình thức nào ạ?
+    - cho em hỏi là trường mình có những phương thức nộp hồ sơ nào ạ?
+    - em muốn học tại trường mình thì hiện tại trường có những phương thức nộp hồ sơ nào ạ?
+
 
 ## HỌC VỤ
 - intent: chương trình khung

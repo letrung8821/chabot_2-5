@@ -245,7 +245,7 @@ nlu:
 - intent: nhà xuất bản #2.3.12
   examples: | 
     - nhà xuất bản
-
+#.
 
 #button 2.7 tiện ích sinh viên
 - intent: giữ xe

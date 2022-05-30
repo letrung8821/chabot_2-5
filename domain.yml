@@ -177,6 +177,10 @@ responses:
   utter_co_so_vat_chat:
   - text: "http://iuh.edu.vn/vi/co-so-vat-chat-s19.html"
 
+  utter_cau_lac_bo/nhom:
+  - text: "CLB Tiếng Anh, CLB Kết nối trẻ, CLB Kỹ năng, CLB Kỹ năng tiếng Anh, CLB Truyền thông - Sự kiện ACPP, CLB Truyền thông UMC, Đội công tác xã hội, Đội tiên phong, CLB Cheerleading, CLB Y-Not Dance Crew"
+
+
 #button 2.2
   utter_ban_giam_hieu:
   - text: "bạn hãy chọn người bạn muốn tìm hiểu"
@@ -317,6 +321,9 @@ responses:
   utter_phuong_thuc_xet_tuyen_tuyen_thang: 
   - text: "Theo thông tin mà Bót nghe được thì trường IUH có phương thức xét tuyển thẳng"
 
+  utter_cach_nop_ho_so:
+  - text: "nộp trực tiếp tại trường theo địa chỉ: số 12, Nguyễn Văn Bảo, phường 4, Gò Vấp, TP.Hồ Chí Minh; hoặc nộp qua đường bưu điện theo địa chỉ trên."
+
   utter_diem_chuan:
   - text: "hiện tại mình chưa có thông tin, sẽ cập nhật sớm cho bạn sau nha."
 
@@ -413,6 +420,7 @@ actions:
 - utter_pho_hieu_truong
 - utter_phong_ban
 - utter_lich_su_phat_trien
+- utter_cau_lac_bo/nhom
 #button phòng ban
 - utter_phong_to_chuc_hanh_chinh
 - utter_phong_tai_chinh_ke_toan

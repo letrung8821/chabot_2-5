@@ -199,7 +199,782 @@ nlu:
     - campus
   
 
-#button 2.2 ban giám hiệu
+- intent: lịch sử phát triển
+  examples: |
+    - lịch sử phát triển
+    - lịch sử phát triển của iuh
+    - ad cho em hỏi lịch sử phát triển của trường mình được không ạ
+    - adminh ơi cho em hỏi lịch sử phát triển của trường mình được không ạ
+    - anh ơi cho em hỏi về lịch sử phát triển của trường mình được không
+    - lịch sử phát triển của trường
+    - lịch sử phát triển iuh
+    - tôi muốn biết về lịch sử phát triển của trường
+    - bót ơi cho mình biết về lịch sử phát triển của trường được không
+    - bot cho mình biết về lịch sử của trường được không
+    - bạn có biết gì về lịch sử của trường không
+    - lịch sử phát triển của trường như thế nào
+
+
+- intent: ban giám hiệu
+  examples: |
+    - ad ơi cho em hỏi ban giám hiệu gồm những ai
+    - ad ơi cho em hỏi về ban giám hiệu ạ
+    - admin ơi cho em hỏi về ban giám hiệu
+    - admin ơi ban giám hiệu trường mình có những ai thế ạ
+    - ban giám hiệu trường iuh gồm những ai 
+    - ban giám hiệu của iuh bao gồm những ai
+    - bót ơi cho em hỏi là ban giám hiệu trường mình gồm những ai thế
+    - bót ơi cho mình hỏi là ban giám hiệu trường mình bao gồm những ai vậy
+    - bót ơi cho tui hỏi ban giám hiệu trường bao gồm những ai thế
+    - bót ơi cho mình hỏi về ban giám hiệu trường
+    - ban giám hiệu trường mình là ai
+    - ban giám hiệu trường iuh là ai 
+
+- intent: hiệu trưởng
+  examples: |
+    - hiệu trưởng trường iuh là ai
+    - ai là hiệu trưởng trường iuh
+    - hiệu trưởng trường đại học công nghiệp thành phố Hồ Chí Minh là ai
+    - ai là hiệu trưởng trường đại học công nghiệp thành phố Hồ Chí Minh
+    - ad ơi cho em hỏi về hiệu trưởng iuh ạ
+    - cho em hỏi về hiệu trưởng trường mình ạ
+    - hiệu trưởng trưởng mình là ai
+    - em có thể biết tên hiệu trưởng trường mình không ạ
+    - cho em hỏi về hiệu trường trường mình được không ạ
+    - admin có thể cho em biết ai là hiệu trưởng trường mình được không ạ
+    - admin ơi cho em biết về hiệu trưởng trường mình đi ạ
+    - admin ơi hiệu trưởng trường mình bây giờ là ai
+    - admin ơi, bây giờ ai là hiệu trưởng trường mình
+    - bót ơi, bây giờ ai đang là hiệu trưởng iuh 
+    - bót có thể cho mình biết bây giờ ai đang là hiệu trưởng iuh được không 
+    - bót ơi bót, bạn có thể cho mình biết ai đang là hiệu trưởng được không ạ
+    - bót có thể cho mình biết hiện tại ai đang là hiệu trưởng được không
+    - bót cho mình biết ai đang là hiệu trưởng đi
+    - bót ơi bạn cho mình biết ai đang là hiệu trưởng đi
+    - ai là người đang làm hiệu trưởng trường iuh vậy
+
+- intent: phó hiệu trưởng
+  examples: |
+    - phó hiệu trưởng trường iuh là ai
+    - ai là phó hiệu trưởng trường iuh
+    - phó hiệu trưởng trường đại học công nghiệp thành phố Hồ Chí Minh là ai
+    - ai là phó hiệu trưởng trường đại học công nghiệp thành phố Hồ Chí Minh
+    - ad ơi cho em hỏi về phó hiệu trưởng iuh ạ
+    - cho em hỏi về phó hiệu trưởng trường mình ạ
+    - phó hiệu trưởng trưởng mình là ai
+    - em có thể biết tên phó hiệu trưởng trường mình không ạ
+    - cho em hỏi về phó hiệu trường trường mình được không ạ
+    - admin có thể cho em biết ai là phó hiệu trưởng trường mình được không ạ
+    - admin ơi cho em biết về phó hiệu trưởng trường mình đi ạ
+    - admin ơi phó hiệu trưởng trường mình bây giờ là ai
+    - admin ơi, bây giờ ai là phó hiệu trưởng trường mình
+    - bót ơi, bây giờ ai đang là phó hiệu trưởng iuh 
+    - bót có thể cho mình biết bây giờ ai đang là phó hiệu trưởng iuh được không 
+    - bót ơi bót, bạn có thể cho mình biết ai đang là phó hiệu trưởng được không ạ
+    - bót có thể cho mình biết hiện tại ai đang là phó hiệu trưởng được không
+    - bót cho mình biết ai đang là phó hiệu trưởng đi
+    - bót ơi bạn cho mình biết ai đang là phó hiệu trưởng đi
+    - ai là người đang làm hiệu phó trưởng trường iuh vậy
+  
+- intent: phòng ban
+  examples: |
+    - trường mình có những phòng ban nào ạ
+    - trường iuh có những phòng ban nào
+    - trường iuh có bao nhiêu phòng ban
+    - iuh có bao nhiêu phòng ban
+    - iuh có bao nhiêu phòng ban vậy ạ
+    - iuh có tổng cộng bao nhiêu phòng ban thế
+    - bạn có thể cho mình biết iuh có bao nhiêu phòng ban được không ạ
+    - tổng cộng có bao nhiêu phòng ban trong trường iuh thế
+    - iuh có bao nhiêu phòng ban vậy bạn
+    - ad ơi cho em hỏi iuh có bao nhiêu phòng ban thế
+    - admin ơi cho em hỏi iuh có bao nhiêu phòng ban thế
+    - admin ơi cho em hỏi là iuh có tổng bao nhiêu phòng ban thế ạ
+    - admin ơi cho em hỏi là trường đại học công nghiệp thành phố hồ chí mình có bao nhiêu phòng ban thế
+    - ad ơi cho em hỏi trường đại học công nghiệp thành phố hồ chí minh có bao nhiêu phòng ban thế
+    - ad ơi cho hỏi trường đại học công nghiệp thành phố hồ chí mình có những phòng ban nào vậy
+    - ad ơi cho mình hỏi trường đại học công nghiệp có bao nhiêu phòng ban
+    - bót ơi cho em hỏi trường iuh có bao nhiêu phòng ban
+    - bót ơi cho mình hỏi trường iuh có những phòng ban nào thế
+    - bót ơi cho em hỏi trường mình có những phòng ban nào thế nhỉ
+    - bót ơi cho tui hỏi trường mình có những phòng ban nào
+    - phòng ban
+    - trường có những phòng ban nào
+    - bót có biết gì về phòng ban không
+    - mình muốn tìm hiểu về phòng ban thì hỏi như thế nào ạ
+    - ad ơi mình muốn tìm hiểu về phòng ban thì hỏi như thế nào ạ
+    - mình muốn biết về phòng ban
+
+- intent: câu lạc bộ/nhóm
+  examples: |
+    - cho em hỏi trường mình có những câu lạc bộ nào không ạ
+    - ad ơi cho em hỏi trường mình có câu lạc bộ nào thế ạ
+    - ad ơi cho em hỏi trường mình có những câu lạc bộ nào
+    - ad ơi cho em hỏi trường mình có những câu lạc bộ nào thé
+    - admin ơi cho em hỏi trường mình có câu lạc bộ nào thế ạ
+    - admin ơi cho em hỏi trường mình có câu lạc bộ nào
+    - ad cho hỏi trường mình có những câu lạc bộ nào được không 
+    - trường iuh có bao nhiêu câu lạc bộ
+    - câu lạc bộ trường mình có bao nhiêu
+    - iuh có những câu lạc bộ nào
+    - ad cho hỏi iuh có những câu lạc bộ nào 
+    - admin cho hỏi iuh có những câu lạc bộ nào
+    - những câu lạc bộ nào đang hoạt động ở iuh
+    - iuh có những câu lạc bộ nào đang hoạt động
+    - cho mình biết tên những câu lạc bộ đang hoạt động trong iuh được không ạ
+    - ad cho mình biết tên những câu lạc bộ đang hoạt động trong iuh được không
+    - admin cho mình biết tên những câu lạc bộ trong hoạt động trong nhóm đi
+    - bót ơi cho mình hỏi những câu lạc bộ đang hoạt động trong nhóm được không
+    - bót ơi cho mình hỏi những câu lạc bộ đang hoạt động trong nhóm được không
+    - bót ơi trường mình có những câu lạc bộ nào thế
+    - bót ơi, trường mình có bao nhiêu câu lạc bộ vậy
+    - bót có thể cho mình biết trường mình có bao nhiêu câu lạc bộ không
+    - bót ơi bót, bót có thể cho mình biết những câu lạc bộ đang hoạt động trong trường được không
+    - trường mình có những câu lạc bộ nào thế bót
+    - iuh có những câu lạc bộ nào thế bót
+    - trường đại học công nghiệp có những câu lạc bộ nào thế bót
+    - trường đại học công nghiệp thành phố hồ chí minh có những câu lạc bộ nào thế bót ơi
+    - bót có thể cho mình biết trường mình có những câu lạc bộ nào được không
+
+- intent: phòng tổ chức hành chính
+  examples: |
+    - trường mình có phòng tổ chức hành chính không ạ
+    - ad cho em hỏi trường mình có phòng tổ chức hành chính không ạ
+    - admin ơi cho em hỏi trường mình có phòng tổ chức hành chính không ạ
+    - admin ơi cho em hỏi trường mình có phòng tổ chức hành chính không
+    - admin ơi trường mình có phòng tổ chức hành chính không
+    - admin ơi trường mình có phòng tổ chức hành chính không ạ
+    - ad ơi trường mình có phòng tổ chức hành chính không
+    - ad ơi trường mình có phòng tổ chức hành chính không ạ
+    - cho em hỏi trường mình có phòng tổ chức hành chính 
+    - bót cho em hỏi trường mình có phòng tổ chức tài chính không ạ
+    - trường mình có phòng tổ chức hành chính không
+    - mình muốn biết thêm về phòng tổ chức hành chính
+    - em muốn biết thêm về phòng tổ chức hành chính
+    - phòng tổ chức hành chính ở đâu
+    - cho mình xin thêm thông tin về phòng tổ chức hành chính
+    - hiện tại thì phòng tổ chức hành chính ở đâu ạ
+    - em muốn biết thêm thông tin về phòng tổ chức hành chính
+    - hiện tại thì phòng tổ chức hành chính ở đâu ạ
+    - em muốn tìm hiểu thêm thông tin về phòng tổ chức hành chính
+    - phòng tổ chức hành chính của trường iuh nằm ở đâu vậy ạ
+    - phòng tổ chức hành chính của trường mình thì liên hệ như nào vậy ad
+    - phòng tổ chức hành chính của trường mình liên hệ như nào thế admin
+    - bót ơi mình muốn biết thêm thông tin về phòng tổ chức hành chính
+    - cho mình biết chức năng của phòng tổ chức hành chính được không
+    - phòng tổ chức hành chính là gì
+    - phòng tổ chức hành chính nằm ở đâu
+    - phòng tổ chức hành chính có tác dụng gì
+    - ad cho em hỏi phòng hành tổ chức hành chính là gì ạ
+    - admin cho em hỏi phòng tổ chức hành chính là gì ạ
+    - bót ơi cho mình hỏi phòng tổ chức hành chính là gì thế
+    - bót ơi cho em hỏi phòng tổ chức hành chính là gì thế
+    - bót ơi em tôi hỏi phòng tổ chức hành chính là gì thế
+    - bót ơi cho tui hỏi phòng tổ chức hành chính là gì thế
+    - ad ơi cho em hỏi phòng tổ chức hành chính có tác dụng gì thế 
+    - admin ơi cho em hỏi phòng tổ chức hành chính có tác dụng gì thế
+    - ad cho hỏi phòng tổ chức hành chính có tác dụng gì vậy
+    - ad cho mình hỏi phòng tổ chức hành chính có tác dụng gì vậy
+    - ad cho hỏi phòng tổ chức hành chính có tác dụng gì
+    - chức năng của phòng tổ chức hành chính là gì thế
+    - ad cho mình hỏi chức năng của phòng tổ chức hành chính là gì thế
+    - ad ơi cho em hỏi chức năng của phòng tổ chức hành chính là gì thế
+    - mình có thể biết về chức năng của phòng tổ chức hành chính được không
+    - admin ơi cho mình biết thêm thông tin về chức năng của phòng tổ chức hành chính được không
+    - chức năng của phòng tổ chức hành chính là gì vậy
+    - admin cho mình biết về chức năng của phòng tổ chức hành chính là gì được không
+    - admin ơi cho mình biết thêm về chức năng của phòng tổ chức hành chính được không
+    - bót ơi cho mình hỏi chức năng của phòng tổ chức hành chính được không ạ
+    - mình muốn biết thêm về chức năng của phòng tổ chức hành chính
+    - chức năng của phòng tổ chức hành chính của iuh là gì thế 
+    - chức năng của phòng tổ chức hành chính
+    
+- intent: phòng tài chính kế toán
+  examples: |
+    - trường mình có phòng tài chính kế toán không ạ
+    - ad cho em hỏi trường mình có phòng tài chính kế toán không ạ
+    - admin ơi cho em hỏi trường mình có phòng tài chính kế toán không ạ
+    - admin ơi cho em hỏi trường mình có phòng tài chính kế toán không
+    - admin ơi trường mình có phòng tài chính kế toán không
+    - admin ơi trường mình có phòng tài chính kế toán không ạ
+    - ad ơi trường mình có phòng tài chính kế toán không
+    - ad ơi trường mình có phòng tài chính kế toán không ạ
+    - cho em hỏi trường mình có phòng tài chính kế toán
+    - bót cho em hỏi trường mình có phòng tổ chức tài chính không ạ
+    - trường mình có phòng tài chính kế toán không
+    - mình muốn biết thêm về phòng tài chính kế toán
+    - em muốn biết thêm về phòng tài chính kế toán
+    - phòng tài chính kế toán ở đâu
+    - cho mình xin thêm thông tin về phòng tài chính kế toán
+    - hiện tại thì phòng tài chính kế toán ở đâu ạ
+    - em muốn biết thêm thông tin về phòng tài chính kế toán
+    - hiện tại thì phòng tài chính kế toán ở đâu ạ
+    - em muốn tìm hiểu thêm thông tin về phòng tài chính kế toán
+    - phòng tài chính kế toán trường iuh nằm ở đâu vậy ạ
+    - phòng tài chính kế toán của trường mình thì liên hệ như nào vậy ad
+    - phòng tài chính kế toán của trường mình liên hệ như nào thế admin
+    - bót ơi mình muốn biết thêm thông tin về phòng tài chính kế toán
+    - cho mình biết chức năng của phòng tài chính kế toán được không
+    - phòng tài chính kế toán là gì
+    - phòng tài chính kế toán nằm ở đâu
+    - phòng tài chính kế toán có tác dụng gì
+    - ad cho em hỏi phòng tài chính kế toán là gì ạ
+    - admin cho em hỏi phòng tài chính kế toán là gì ạ
+    - bót ơi cho mình hỏi phòng tài chính kế toán là gì thế
+    - bót ơi cho em hỏi phòng tài chính kế toán là gì thế
+    - bót ơi em tôi hỏi phòng tài chính kế toán là gì thế
+    - bót ơi cho tui hỏi phòng tài chính kế toán là gì thế
+    - ad ơi cho em hỏi phòng tài chính kế toán có tác dụng gì thế 
+    - admin ơi cho em hỏi phòng tài chính kế toán có tác dụng gì thế
+    - ad cho hỏi phòng tài chính kế toán có tác dụng gì vậy
+    - ad cho mình hỏi phòng tài chính kế toán có tác dụng gì vậy
+    - ad cho hỏi phòng tài chính kế toán có tác dụng gì
+    - chức năng của phòng tài chính kế toán là gì thế
+    - ad cho mình hỏi chức năng của phòng tài chính kế toán là gì thế
+    - ad ơi cho em hỏi chức năng của phòng tài chính kế toán là gì thế
+    - mình có thể biết về chức năng của phòng tài chính kế toán được không
+    - admin ơi cho mình biết thêm thông tin về chức năng của phòng tài chính kế toán được không
+    - chức năng của phòng tài chính kế toán là gì vậy
+    - admin cho mình biết về chức năng của phòng tài chính kế toán là gì được không
+    - admin ơi cho mình biết thêm về chức năng của phòng tài chính kế toán được không
+    - bót ơi cho mình hỏi chức năng của phòng tài chính kế toán được không ạ
+    - mình muốn biết thêm về chức năng của phòng tài chính kế toán
+    - chức năng của phòng tài chính kế toán của iuh là gì thế 
+    - chức năng của phòng tài chính kế toán
+
+- intent: phòng kế hoạch đầu tư
+  examples: |
+    - trường mình có phòng kế hoạch đầu tư không ạ
+    - ad cho em hỏi trường mình có phòng kế hoạch đầu tư không ạ
+    - admin ơi cho em hỏi trường mình có phòng kế hoạch đầu tư không ạ
+    - admin ơi cho em hỏi trường mình có phòng kế hoạch đầu tư không
+    - admin ơi trường mình có phòng kế hoạch đầu tư không
+    - admin ơi trường mình có phòng kế hoạch đầu tư không ạ
+    - ad ơi trường mình có phòng kế hoạch đầu tư không
+    - ad ơi trường mình có phòng kế hoạch đầu tư không ạ
+    - cho em hỏi trường mình có phòng kế hoạch đầu tư
+    - bót cho em hỏi trường mình có phòng kế hoạch đầu tư không ạ
+    - trường mình có phòng kế hoạch đầu tư không
+    - mình muốn biết thêm về phòng kế hoạch đầu tư
+    - em muốn biết thêm về phòng kế hoạch đầu tư
+    - phòng kế hoạch đầu tư ở đâu
+    - cho mình xin thêm thông tin về phòng kế hoạch đầu tư
+    - hiện tại thì phòng kế hoạch đầu tư ở đâu ạ
+    - em muốn biết thêm thông tin về phòng kế hoạch đầu tư
+    - hiện tại thì phòng kế hoạch đầu tư ở đâu ạ
+    - em muốn tìm hiểu thêm thông tin về phòng kế hoạch đầu tư
+    - phòng kế hoạch đầu tư của trường iuh nằm ở đâu vậy ạ
+    - phòng kế hoạch đầu tư của trường mình thì liên hệ như nào vậy ad
+    - phòng kế hoạch đầu tư của trường mình liên hệ như nào thế admin
+    - bót ơi mình muốn biết thêm thông tin về phòng kế hoạch đầu tư
+    - cho mình biết chức năng của phòng kế hoạch đầu tư được không
+    - phòng kế hoạch đầu tư là gì
+    - phòng kế hoạch đầu tư nằm ở đâu
+    - phòng kế hoạch đầu tư có tác dụng gì
+    - ad cho em hỏi phòng hành kế hoạch đầu tư là gì ạ
+    - admin cho em hỏi phòng kế hoạch đầu tư là gì ạ
+    - bót ơi cho mình hỏi phòng kế hoạch đầu tư là gì thế
+    - bót ơi cho em hỏi phòng kế hoạch đầu tư là gì thế
+    - bót ơi em tôi hỏi phòng kế hoạch đầu tư là gì thế
+    - bót ơi cho tui hỏi phòng kế hoạch đầu tư là gì thế
+    - ad ơi cho em hỏi phòng kế hoạch đầu tư có tác dụng gì thế 
+    - admin ơi cho em hỏi phòng kế hoạch đầu tư có tác dụng gì thế
+    - ad cho hỏi phòng kế hoạch đầu tư có tác dụng gì vậy
+    - ad cho mình hỏi phòng kế hoạch đầu tư có tác dụng gì vậy
+    - ad cho hỏi phòng kế hoạch đầu tư có tác dụng gì
+    - chức năng của phòng kế hoạch đầu tư là gì thế
+    - ad cho mình hỏi chức năng của phòng kế hoạch đầu tư là gì thế
+    - ad ơi cho em hỏi chức năng của phòng kế hoạch đầu tư là gì thế
+    - mình có thể biết về chức năng của phòng kế hoạch đầu tư được không
+    - admin ơi cho mình biết thêm thông tin về chức năng của phòng kế hoạch đầu tư được không
+    - chức năng của phòng kế hoạch đầu tư là gì vậy
+    - admin cho mình biết về chức năng của phòng kế hoạch đầu tư là gì được không
+    - admin ơi cho mình biết thêm về chức năng của phòng kế hoạch đầu tư được không
+    - bót ơi cho mình hỏi chức năng của phòng kế hoạch đầu tư được không ạ
+    - mình muốn biết thêm về chức năng của phòng kế hoạch đầu tư
+    - chức năng của phòng kế hoạch đầu tư của iuh là gì thế 
+    - chức năng của phòng kế hoạch đầu tư
+
+- intent: phòng đào tạo
+  examples: |
+    - trường mình có phòng đào tạo không ạ
+    - ad cho em hỏi trường mình có phòng đào tạo không ạ
+    - admin ơi cho em hỏi trường mình có phòng đào tạo không ạ
+    - admin ơi cho em hỏi trường mình có phòng đào tạo không
+    - admin ơi trường mình có phòng đào tạo không
+    - admin ơi trường mình có phòng đào tạo không ạ
+    - ad ơi trường mình có phòng đào tạo không
+    - ad ơi trường mình có phòng đào tạo không ạ
+    - cho em hỏi trường mình có phòng đào tạo
+    - bót cho em hỏi trường mình có phòng đào tạo không ạ
+    - trường mình có phòng đào tạo không
+    - mình muốn biết thêm về phòng đào tạo
+    - em muốn biết thêm về phòng đào tạo
+    - phòng đào tạo ở đâu
+    - cho mình xin thêm thông tin về phòng đào tạo
+    - hiện tại thì phòng đào tạo ở đâu ạ
+    - em muốn biết thêm thông tin về phòng đào tạo
+    - hiện tại thì phòng đào tạo ở đâu ạ
+    - em muốn tìm hiểu thêm thông tin về phòng đào tạo
+    - phòng đào tạo của trường iuh nằm ở đâu vậy ạ
+    - phòng đào tạo của trường mình thì liên hệ như nào vậy ad
+    - phòng đào tạo của trường mình liên hệ như nào thế admin
+    - bót ơi mình muốn biết thêm thông tin về phòng đào tạo
+    - cho mình biết chức năng của phòng đào tạo được không
+    - phòng đào tạo là gì
+    - phòng đào tạođào tạo nằm ở đâu
+    - phòng đào tạo có tác dụng gì
+    - ad cho em hỏi phòng đào tạo là gì ạ
+    - admin cho em hỏi phòng đào tạo là gì ạ
+    - bót ơi cho mình hỏi phòng đào tạo là gì thế
+    - bót ơi cho em hỏi phòng đào tạo là gì thế
+    - bót ơi em tôi hỏi phòng đào tạo là gì thế
+    - bót ơi cho tui hỏi phòng đào tạo là gì thế
+    - ad ơi cho em hỏi phòng đào tạo có tác dụng gì thế 
+    - admin ơi cho em hỏi phòng đào tạo có tác dụng gì thế
+    - ad cho hỏi phòng đào tạo có tác dụng gì vậy
+    - ad cho mình hỏi phòng đào tạo có tác dụng gì vậy
+    - ad cho hỏi phòng đào tạo có tác dụng gì
+    - chức năng của phòng đào tạo là gì thế
+    - ad cho mình hỏi chức năng của phòng đào tạo là gì thế
+    - ad ơi cho em hỏi chức năng của phòng đào tạo là gì thế
+    - mình có thể biết về chức năng của phòng đào tạo được không
+    - admin ơi cho mình biết thêm thông tin về chức năng của phòng đào tạo được không
+    - chức năng của phòng đào tạo là gì vậy
+    - admin cho mình biết về chức năng của phòng đào tạo là gì được không
+    - admin ơi cho mình biết thêm về chức năng của phòng đào tạo được không
+    - bót ơi cho mình hỏi chức năng của phòng đào tạo được không ạ
+    - mình muốn biết thêm về chức năng của phòng đào tạo
+    - chức năng của phòng đào tạo của iuh là gì thế 
+    - chức năng của phòng đào tạo
+
+- intent: phòng quản lý và hợp tác quốc tế
+  examples: |
+    - trường mình có phòng quản lý và hợp tác quốc tế không ạ
+    - ad cho em hỏi trường mình có phòng quản lý và hợp tác quốc tế không ạ
+    - admin ơi cho em hỏi trường mình có phòng quản lý và hợp tác quốc tế không ạ
+    - admin ơi cho em hỏi trường mình có phòng quản lý và hợp tác quốc tế không
+    - admin ơi trường mình có phòng quản lý và hợp tác quốc tế không
+    - admin ơi trường mình có phòng quản lý và hợp tác quốc tế không ạ
+    - ad ơi trường mình có phòng quản lý và hợp tác quốc tế không
+    - ad ơi trường mình có phòng quản lý và hợp tác quốc tế không ạ
+    - cho em hỏi trường mình có phòng quản lý và hợp tác quốc tế 
+    - bót cho em hỏi trường mình có phòng quản lý và hợp tác quốc tế không ạ
+    - trường mình có phòng quản lý và hợp tác quốc tế không
+    - mình muốn biết thêm về phòng quản lý và hợp tác quốc tế
+    - em muốn biết thêm về phòng quản lý và hợp tác quốc tế
+    - phòng quản lý và hợp tác quốc tế ở đâu
+    - cho mình xin thêm thông tin về phòng quản lý và hợp tác quốc tế
+    - hiện tại thì phòng quản lý và hợp tác quốc tế ở đâu ạ
+    - em muốn biết thêm thông tin về phòng quản lý và hợp tác quốc tế
+    - hiện tại thì phòng quản lý và hợp tác quốc tế ở đâu ạ
+    - em muốn tìm hiểu thêm thông tin về phòng quản lý và hợp tác quốc tế
+    - phòng quản lý và hợp tác quốc tế của trường iuh nằm ở đâu vậy ạ
+    - phòng quản lý và hợp tác quốc tế của trường mình thì liên hệ như nào vậy ad
+    - phòng quản lý và hợp tác quốc tế của trường mình liên hệ như nào thế admin
+    - bót ơi mình muốn biết thêm thông tin về phòng quản lý và hợp tác quốc tế
+    - cho mình biết chức năng của phòng quản lý và hợp tác quốc tế được không
+    - phòng quản lý và hợp tác quốc tế là gì
+    - phòng quản lý và hợp tác quốc tế nằm ở đâu
+    - phòng quản lý và hợp tác quốc tế có tác dụng gì
+    - ad cho em hỏi phòng hành quản lý và hợp tác quốc tế là gì ạ
+    - admin cho em hỏi phòng quản lý và hợp tác quốc tế là gì ạ
+    - bót ơi cho mình hỏi phòng quản lý và hợp tác quốc tế là gì thế
+    - bót ơi cho em hỏi phòng quản lý và hợp tác quốc tế là gì thế
+    - bót ơi em tôi hỏi phòng quản lý và hợp tác quốc tế là gì thế
+    - bót ơi cho tui hỏi phòng quản lý và hợp tác quốc tế là gì thế
+    - ad ơi cho em hỏi phòng quản lý và hợp tác quốc tế có tác dụng gì thế 
+    - admin ơi cho em hỏi phòng quản lý và hợp tác quốc tế có tác dụng gì thế
+    - ad cho hỏi phòng quản lý và hợp tác quốc tế có tác dụng gì vậy
+    - ad cho mình hỏi phòng quản lý và hợp tác quốc tế có tác dụng gì vậy
+    - ad cho hỏi phòng quản lý và hợp tác quốc tế có tác dụng gì
+    - chức năng của phòng quản lý và hợp tác quốc tế là gì thế
+    - ad cho mình hỏi chức năng của phòng quản lý và hợp tác quốc tế là gì thế
+    - ad ơi cho em hỏi chức năng của phòng quản lý và hợp tác quốc tế là gì thế
+    - mình có thể biết về chức năng của phòng quản lý và hợp tác quốc tế được không
+    - admin ơi cho mình biết thêm thông tin về chức năng của phòng quản lý và hợp tác quốc tế được không
+    - chức năng của phòng quản lý và hợp tác quốc tế là gì vậy
+    - admin cho mình biết về chức năng của phòng quản lý và hợp tác quốc tế là gì được không
+    - admin ơi cho mình biết thêm về chức năng của phòng quản lý và hợp tác quốc tế được không
+    - bót ơi cho mình hỏi chức năng của phòng quản lý và hợp tác quốc tế được không ạ
+    - mình muốn biết thêm về chức năng của phòng quản lý và hợp tác quốc tế
+    - chức năng của phòng quản lý và hợp tác quốc tế của iuh là gì thế 
+    - chức năng của phòng quản lý và hợp tác quốc tế
+
+- intent: phòng công tác sinh viên
+  examples: |
+    - trường mình có phòng công tác sinh viên không ạ
+    - ad cho em hỏi trường mình có phòng công tác sinh viên không ạ
+    - admin ơi cho em hỏi trường mình có phòng công tác sinh viên không ạ
+    - admin ơi cho em hỏi trường mình có phòng công tác sinh viên không
+    - admin ơi trường mình có phòng công tác sinh viên không
+    - admin ơi trường mình có phòng công tác sinh viên không ạ
+    - ad ơi trường mình có phòng công tác sinh viên không
+    - ad ơi trường mình có phòng công tác sinh viên không ạ
+    - cho em hỏi trường mình có phòng công tác sinh viên 
+    - bót cho em hỏi trường mình có phòng công tác sinh viên ạ
+    - trường mình có phòng công tác sinh viên không
+    - mình muốn biết thêm về phòng công tác sinh viên
+    - em muốn biết thêm về phòng công tác sinh viên
+    - phòng công tác sinh viên ở đâu
+    - cho mình xin thêm thông tin về phòng công tác sinh viên
+    - hiện tại thì phòng công tác sinh viên ở đâu ạ
+    - em muốn biết thêm thông tin về phòng công tác sinh viên
+    - hiện tại thì phòng công tác sinh viên ở đâu ạ
+    - em muốn tìm hiểu thêm thông tin về phòng công tác sinh viên
+    - phòng công tác sinh viên của trường iuh nằm ở đâu vậy ạ
+    - phòng công tác sinh viên của trường mình thì liên hệ như nào vậy ad
+    - phòng công tác sinh viên của trường mình liên hệ như nào thế admin
+    - bót ơi mình muốn biết thêm thông tin về phòng công tác sinh viên
+    - cho mình biết chức năng của phòng công tác sinh viên được không
+    - phòng công tác sinh viên là gì
+    - phòng công tác sinh viên nằm ở đâu
+    - phòng công tác sinh viên có tác dụng gì
+    - ad cho em hỏi phòng hành công tác sinh viên là gì ạ
+    - admin cho em hỏi phòng công tác sinh viên là gì ạ
+    - bót ơi cho mình hỏi phòng công tác sinh viên là gì thế
+    - bót ơi cho em hỏi phòng công tác sinh viênh là gì thế
+    - bót ơi em tôi hỏi phòng công tác sinh viên là gì thế
+    - bót ơi cho tui hỏi phòng công tác sinh viên là gì thế
+    - ad ơi cho em hỏi phòng công tác sinh viên có tác dụng gì thế 
+    - admin ơi cho em hỏi phòng công tác sinh viênh có tác dụng gì thế
+    - ad cho hỏi phòng công tác sinh viên có tác dụng gì vậy
+    - ad cho mình hỏi phòng công tác sinh viên có tác dụng gì vậy
+    - ad cho hỏi phòng công tác sinh viên có tác dụng gì
+    - chức năng của phòng công tác sinh viên là gì thế
+    - ad cho mình hỏi chức năng của phòng công tác sinh viên là gì thế
+    - ad ơi cho em hỏi chức năng của phòng công tác sinh viên là gì thế
+    - mình có thể biết về chức năng của phòng công tác sinh viên được không
+    - admin ơi cho mình biết thêm thông tin về chức năng của phòng công tác sinh viên được không
+    - chức năng của phòng công tác sinh viên là gì vậy
+    - admin cho mình biết về chức năng của phòng công tác sinh viên là gì được không
+    - admin ơi cho mình biết thêm về chức năng của phòng công tác sinh viên được không
+    - bót ơi cho mình hỏi chức năng của phòng công tác sinh viên được không ạ
+    - mình muốn biết thêm về chức năng của phòng công tác sinh viên
+    - chức năng của phòng công tác sinh viên của iuh là gì thế 
+    - chức năng của phòng công tác sinh viên
+
+- intent: phòng khảo thí và đảm bảo chất lượng
+  examples: |
+    - trường mình có phòng khảo thí và đảm bảo chất lượng không ạ
+    - ad cho em hỏi trường mình có phòng khảo thí và đảm bảo chất lượng không ạ
+    - admin ơi cho em hỏi trường mình có phòng khảo thí và đảm bảo chất lượng không ạ
+    - admin ơi cho em hỏi trường mình có phòng khảo thí và đảm bảo chất lượng không
+    - admin ơi trường mình có phòng khảo thí và đảm bảo chất lượng không
+    - admin ơi trường mình có phòng khảo thí và đảm bảo chất lượng không ạ
+    - ad ơi trường mình có phòng khảo thí và đảm bảo chất lượng không
+    - ad ơi trường mình có phòng khảo thí và đảm bảo chất lượng không ạ
+    - cho em hỏi trường mình có phòng khảo thí và đảm bảo chất lượng
+    - bót cho em hỏi trường mình có phòng khảo thí và đảm bảo chất lượng không ạ
+    - trường mình có phòng khảo thí và đảm bảo chất lượng không
+    - mình muốn biết thêm về phòng khảo thí và đảm bảo chất lượng
+    - em muốn biết thêm về phòng khảo thí và đảm bảo chất lượng
+    - phòng khảo thí và đảm bảo chất lượng ở đâu
+    - cho mình xin thêm thông tin về phòng khảo thí và đảm bảo chất lượng
+    - hiện tại thì phòng khảo thí và đảm bảo chất lượng ở đâu ạ
+    - em muốn biết thêm thông tin về phòng khảo thí và đảm bảo chất lượng
+    - hiện tại thì phòng khảo thí và đảm bảo chất lượng ở đâu ạ
+    - em muốn tìm hiểu thêm thông tin về phòng khảo thí và đảm bảo chất lượng
+    - phòng khảo thí và đảm bảo chất lượng của trường iuh nằm ở đâu vậy ạ
+    - phòng khảo thí và đảm bảo chất lượng của trường mình thì liên hệ như nào vậy ad
+    - phòng khảo thí và đảm bảo chất lượng của trường mình liên hệ như nào thế admin
+    - bót ơi mình muốn biết thêm thông tin về phòng khảo thí và đảm bảo chất lượng
+    - cho mình biết chức năng của phòng khảo thí và đảm bảo chất lượng được không
+    - phòng khảo thí và đảm bảo chất lượng là gì
+    - phòng khảo thí và đảm bảo chất lượng nằm ở đâu
+    - phòng khảo thí và đảm bảo chất lượng có tác dụng gì
+    - ad cho em hỏi phòng hành khảo thí và đảm bảo chất lượng là gì ạ
+    - admin cho em hỏi phòng khảo thí và đảm bảo chất lượng là gì ạ
+    - bót ơi cho mình hỏi phòng khảo thí và đảm bảo chất lượng là gì thế
+    - bót ơi cho em hỏi phòng khảo thí và đảm bảo chất lượng là gì thế
+    - bót ơi em tôi hỏi phòng khảo thí và đảm bảo chất lượng là gì thế
+    - bót ơi cho tui hỏi phòng khảo thí và đảm bảo chất lượng là gì thế
+    - ad ơi cho em hỏi phòng khảo thí và đảm bảo chất lượng có tác dụng gì thế 
+    - admin ơi cho em hỏi phòng khảo thí và đảm bảo chất lượng có tác dụng gì thế
+    - ad cho hỏi phòng khảo thí và đảm bảo chất lượng có tác dụng gì vậy
+    - ad cho mình hỏi phòng khảo thí và đảm bảo chất lượng có tác dụng gì vậy
+    - ad cho hỏi phòng khảo thí và đảm bảo chất lượng có tác dụng gì
+    - chức năng của phòng khảo thí và đảm bảo chất lượng là gì thế
+    - ad cho mình hỏi chức năng của phòng khảo thí và đảm bảo chất lượng là gì thế
+    - ad ơi cho em hỏi chức năng của phòng khảo thí và đảm bảo chất lượng là gì thế
+    - mình có thể biết về chức năng của phòng khảo thí và đảm bảo chất lượng được không
+    - admin ơi cho mình biết thêm thông tin về chức năng của phòng khảo thí và đảm bảo chất lượng được không
+    - chức năng của phòng khảo thí và đảm bảo chất lượng là gì vậy
+    - admin cho mình biết về chức năng của phòng khảo thí và đảm bảo chất lượng là gì được không
+    - admin ơi cho mình biết thêm về chức năng của phòng khảo thí và đảm bảo chất lượng được không
+    - bót ơi cho mình hỏi chức năng của phòng khảo thí và đảm bảo chất lượng được không ạ
+    - mình muốn biết thêm về chức năng của phòng khảo thí và đảm bảo chất lượng
+    - chức năng của phòng khảo thí và đảm bảo chất lượng của iuh là gì thế 
+    - chức năng của phòng khảo thí và đảm bảo chất lượng
+
+- intent: phòng quản trị
+  examples: |
+    - trường mình có phòng quản trị không ạ
+    - ad cho em hỏi trường mình có phòng quản trị không ạ
+    - admin ơi cho em hỏi trường mình có phòng quản trị không ạ
+    - admin ơi cho em hỏi trường mình có phòng quản trị không
+    - admin ơi trường mình có phòng quản trị không
+    - admin ơi trường mình có phòng quản trị không ạ
+    - ad ơi trường mình có phòng quản trị không
+    - ad ơi trường mình có phòng quản trị không ạ
+    - cho em hỏi trường mình có phòng quản trị 
+    - bót cho em hỏi trường mình có phòng quản trị không ạ
+    - trường mình có phòng quản trị không
+    - mình muốn biết thêm về phòng quản trị
+    - em muốn biết thêm về phòng quản trị
+    - phòng quản trị ở đâu
+    - cho mình xin thêm thông tin về phòng quản trị
+    - hiện tại thì phòng quản trị ở đâu ạ
+    - em muốn biết thêm thông tin về phòng quản trị
+    - hiện tại thì phòng quản trị ở đâu ạ
+    - em muốn tìm hiểu thêm thông tin về phòng quản trị
+    - phòng quản trị của trường iuh nằm ở đâu vậy ạ
+    - phòng quản trị của trường mình thì liên hệ như nào vậy ad
+    - phòng quản trị của trường mình liên hệ như nào thế admin
+    - bót ơi mình muốn biết thêm thông tin về phòng quản trị
+    - cho mình biết chức năng của phòng quản trị được không
+    - phòng quản trị là gì
+    - phòng quản trị nằm ở đâu
+    - phòng quản trị có tác dụng gì
+    - ad cho em hỏi phòng hành quản trị là gì ạ
+    - admin cho em hỏi phòng quản trị là gì ạ
+    - bót ơi cho mình hỏi phòng quản trị là gì thế
+    - bót ơi cho em hỏi phòng quản trị là gì thế
+    - bót ơi em tôi hỏi phòng quản trị là gì thế
+    - bót ơi cho tui hỏi phòng quản trị là gì thế
+    - ad ơi cho em hỏi phòng quản trị có tác dụng gì thế 
+    - admin ơi cho em hỏi phòng quản trị có tác dụng gì thế
+    - ad cho hỏi phòng quản trị có tác dụng gì vậy
+    - ad cho mình hỏi phòng quản trị có tác dụng gì vậy
+    - ad cho hỏi phòng quản trị có tác dụng gì
+    - chức năng của phòng quản trị là gì thế
+    - ad cho mình hỏi chức năng của phòng quản trị là gì thế
+    - ad ơi cho em hỏi chức năng của phòng quản trị là gì thế
+    - mình có thể biết về chức năng của phòng quản trị được không
+    - admin ơi cho mình biết thêm thông tin về chức năng của phòng quản trị được không
+    - chức năng của phòng quản trị là gì vậy
+    - admin cho mình biết về chức năng của phòng quản trị là gì được không
+    - admin ơi cho mình biết thêm về chức năng của phòng quản trị được không
+    - bót ơi cho mình hỏi chức năng của phòng quản trị được không ạ
+    - mình muốn biết thêm về chức năng của phòng quản trị
+    - chức năng của phòng quản trị của iuh là gì thế 
+    - chức năng của phòng quản trị
+
+- intent: phòng dịch vụ 
+  examples: |
+    - trường mình có phòng dịch vụ không ạ
+    - ad cho em hỏi trường mình có phòng dịch vụ không ạ
+    - admin ơi cho em hỏi trường mình có phòng dịch vụ không ạ
+    - admin ơi cho em hỏi trường mình có phòng dịch vụ không
+    - admin ơi trường mình có phòng dịch vụ không
+    - admin ơi trường mình có phòng dịch vụ không ạ
+    - ad ơi trường mình có phòng dịch vụ không
+    - ad ơi trường mình có phòng dịch vụ không ạ
+    - cho em hỏi trường mình có phòng dịch vụ
+    - bót cho em hỏi trường mình có phòng dịch vụ không ạ
+    - trường mình có phòng dịch vụ không
+    - mình muốn biết thêm về phòng dịch vụh
+    - em muốn biết thêm về phòng dịch vụ
+    - phòng dịch vụ ở đâu
+    - cho mình xin thêm thông tin về phòng dịch vụ
+    - hiện tại thì phòng dịch vụ ở đâu ạ
+    - em muốn biết thêm thông tin về phòng dịch vụ
+    - hiện tại thì phòng dịch vụ ở đâu ạ
+    - em muốn tìm hiểu thêm thông tin về phòng dịch vụ
+    - phòng dịch vụ của trường iuh nằm ở đâu vậy ạ
+    - phòng dịch vụ của trường mình thì liên hệ như nào vậy ad
+    - phòng dịch vụ của trường mình liên hệ như nào thế admin
+    - bót ơi mình muốn biết thêm thông tin về phòng dịch vụ
+    - cho mình biết chức năng của phòng dịch vụ được không
+    - phòng dịch vụ là gì
+    - phòng dịch vụ nằm ở đâu
+    - phòng dịch vụ có tác dụng gì
+    - ad cho em hỏi phòng hành dịch vụh là gì ạ
+    - admin cho em hỏi phòng dịch vụ là gì ạ
+    - bót ơi cho mình hỏi phòng dịch vụ là gì thế
+    - bót ơi cho em hỏi phòng dịch vụh là gì thế
+    - bót ơi em tôi hỏi phòng dịch vụ là gì thế
+    - bót ơi cho tui hỏi phòng dịch vụ là gì thế
+    - ad ơi cho em hỏi phòng dịch vụ có tác dụng gì thế 
+    - admin ơi cho em hỏi phòng dịch vụ có tác dụng gì thế
+    - ad cho hỏi phòng dịch vụ có tác dụng gì vậy
+    - ad cho mình hỏi phòng dịch vụ có tác dụng gì vậy
+    - ad cho hỏi phòng dịch vụ có tác dụng gì
+    - chức năng của phòng dịch vụ là gì thế
+    - ad cho mình hỏi chức năng của phòng dịch vụ là gì thế
+    - ad ơi cho em hỏi chức năng của phòng dịch vụ là gì thế
+    - mình có thể biết về chức năng của phòng dịch vụ được không
+    - admin ơi cho mình biết thêm thông tin về chức năng của phòng dịch vụ được không
+    - chức năng của phòng dịch vụ là gì vậy
+    - admin cho mình biết về chức năng của phòng dịch vụ là gì được không
+    - admin ơi cho mình biết thêm về chức năng của phòng dịch vụ được không
+    - bót ơi cho mình hỏi chức năng của phòng dịch vụ được không ạ
+    - mình muốn biết thêm về chức năng của phòng dịch vụ
+    - chức năng của phòng dịch vụ của iuh là gì thế 
+    - chức năng của phòng dịch vụ
+    
+- intent: phòng quản lý ký túc xá
+  examples: |
+    - trường mình có phòng quản lý ký túc xá không ạ
+    - ad cho em hỏi trường mình có phòng quản lý ký túc xá không ạ
+    - admin ơi cho em hỏi trường mình có phòng quản lý ký túc xá không ạ
+    - admin ơi cho em hỏi trường mình có phòng quản lý ký túc xá không
+    - admin ơi trường mình có phòng quản lý ký túc xá không
+    - admin ơi trường mình có phòng quản lý ký túc xá không ạ
+    - ad ơi trường mình có phòng quản lý ký túc xá không
+    - ad ơi trường mình có phòng quản lý ký túc xá không ạ
+    - cho em hỏi trường mình có phòng quản lý ký túc xá 
+    - bót cho em hỏi trường mình có phòng quản lý ký túc xá không ạ
+    - trường mình có phòng quản lý ký túc xá không
+    - mình muốn biết thêm về phòng quản lý ký túc xá
+    - em muốn biết thêm về phòng quản lý ký túc xá
+    - phòng quản lý ký túc xá ở đâu
+    - cho mình xin thêm thông tin về phòng quản lý ký túc xá
+    - hiện tại thì phòng quản lý ký túc xá ở đâu ạ
+    - em muốn biết thêm thông tin về phòng quản lý ký túc xá
+    - hiện tại thì phòng quản lý ký túc xá ở đâu ạ
+    - em muốn tìm hiểu thêm thông tin về phòng tổ quản lý ký túc xá
+    - phòng quản lý ký túc xá của trường iuh nằm ở đâu vậy ạ
+    - phòng quản lý ký túc xá của trường mình thì liên hệ như nào vậy ad
+    - phòng quản lý ký túc xá của trường mình liên hệ như nào thế admin
+    - bót ơi mình muốn biết thêm thông tin về phòng quản lý ký túc xá
+    - cho mình biết chức năng của phòng quản lý ký túc xá được không
+    - phòng quản lý ký túc xá là gì
+    - phòng quản lý ký túc xá nằm ở đâu
+    - phòng quản lý ký túc xá có tác dụng gì
+    - ad cho em hỏi phòng hành quản lý ký túc xá là gì ạ
+    - admin cho em hỏi phòng quản lý ký túc xá là gì ạ
+    - bót ơi cho mình hỏi phòng quản lý ký túc xá là gì thế
+    - bót ơi cho em hỏi phòng quản lý ký túc xá là gì thế
+    - bót ơi em tôi hỏi phòng quản lý ký túc xá là gì thế
+    - bót ơi cho tui hỏi phòng quản lý ký túc xá là gì thế
+    - ad ơi cho em hỏi phòng quản lý ký túc xá có tác dụng gì thế 
+    - admin ơi cho em hỏi phòng quản lý ký túc xá có tác dụng gì thế
+    - ad cho hỏi phòng quản lý ký túc xá có tác dụng gì vậy
+    - ad cho mình hỏi phòng quản lý ký túc xá có tác dụng gì vậy
+    - ad cho hỏi phòng quản lý ký túc xá có tác dụng gì
+    - chức năng của phòng quản lý ký túc xá là gì thế
+    - ad cho mình hỏi chức năng của phòng quản lý ký túc xá là gì thế
+    - ad ơi cho em hỏi chức năng của phòng quản lý ký túc xá là gì thế
+    - mình có thể biết về chức năng của phòng quản lý ký túc xá được không
+    - admin ơi cho mình biết thêm thông tin về chức năng của phòng quản lý ký túc xá được không
+    - chức năng của phòng quản lý ký túc xá là gì vậy
+    - admin cho mình biết về chức năng của phòng quản lý ký túc xá là gì được không
+    - admin ơi cho mình biết thêm về chức năng của phòng quản lý ký túc xá được không
+    - bót ơi cho mình hỏi chức năng của phòng quản lý ký túc xá được không ạ
+    - mình muốn biết thêm về chức năng của phòng quản lý ký túc xá
+    - chức năng của phòng quản lý ký túc xá của iuh là gì thế 
+    - chức năng của phòng quản lý ký túc xá
+
+- intent: tạp chí khoa học và công nghệ
+  examples: |
+    - trường mình có phòng tạp chí khoa học và công nghệ không ạ
+    - ad cho em hỏi trường mình có phòng tạp chí khoa học và công nghệ không ạ
+    - admin ơi cho em hỏi trường mình có phòng tạp chí khoa học và công nghệ không ạ
+    - admin ơi cho em hỏi trường mình có phòng tạp chí khoa học và công nghệ không
+    - admin ơi trường mình có phòng tạp chí khoa học và công nghệ không
+    - admin ơi trường mình có phòng tạp chí khoa học và công nghệ không ạ
+    - ad ơi trường mình có phòng tạp chí khoa học và công nghệ không
+    - ad ơi trường mình có phòng tạp chí khoa học và công nghệ không ạ
+    - cho em hỏi trường mình có phòng tạp chí khoa học và công nghệ 
+    - bót cho em hỏi trường mình có phòng tạp chí khoa học và công nghệ không ạ
+    - trường mình có phòng tạp chí khoa học và công nghệ không
+    - mình muốn biết thêm về phòng tạp chí khoa học và công nghệ
+    - em muốn biết thêm về phòng tạp chí khoa học và công nghệ
+    - phòng tạp chí khoa học và công nghệ ở đâu
+    - cho mình xin thêm thông tin về phòng tạp chí khoa học và công nghệ
+    - hiện tại thì phòng tạp chí khoa học và công nghệ ở đâu ạ
+    - em muốn biết thêm thông tin về phòng tạp chí khoa học và công nghệ
+    - hiện tại thì phòng tạp chí khoa học và công nghệ ở đâu ạ
+    - em muốn tìm hiểu thêm thông tin về phòng tạp chí khoa học và công nghệ
+    - phòng tạp chí khoa học và công nghệ của trường iuh nằm ở đâu vậy ạ
+    - phòng tạp chí khoa học và công nghệ của trường mình thì liên hệ như nào vậy ad
+    - phòng tạp chí khoa học và công nghệ của trường mình liên hệ như nào thế admin
+    - bót ơi mình muốn biết thêm thông tin về phòng tạp chí khoa học và công nghệ
+    - cho mình biết chức năng của phòng tạp chí khoa học và công nghệ được không
+    - phòng tạp chí khoa học và công nghệ là gì
+    - phòng tạp chí khoa học và công nghệ nằm ở đâu
+    - phòng tạp chí khoa học và công nghệ có tác dụng gì
+    - ad cho em hỏi phòng hành tạp chí khoa học và công nghệ là gì ạ
+    - admin cho em hỏi phòng tạp chí khoa học và công nghệ là gì ạ
+    - bót ơi cho mình hỏi phòng tạp chí khoa học và công nghệ là gì thế
+    - bót ơi cho em hỏi phòng tạp chí khoa học và công nghệ là gì thế
+    - bót ơi em tôi hỏi phòng tạp chí khoa học và công nghệ là gì thế
+    - bót ơi cho tui hỏi phòng tạp chí khoa học và công nghệ là gì thế
+    - ad ơi cho em hỏi phòng tạp chí khoa học và công nghệ có tác dụng gì thế 
+    - admin ơi cho em hỏi phòng tạp chí khoa học và công nghệ có tác dụng gì thế
+    - ad cho hỏi phòng tạp chí khoa học và công nghệ có tác dụng gì vậy
+    - ad cho mình hỏi phòng tạp chí khoa học và công nghệ có tác dụng gì vậy
+    - ad cho hỏi phòng tạp chí khoa học và công nghệ có tác dụng gì
+    - chức năng của phòng tạp chí khoa học và công nghệ là gì thế
+    - ad cho mình hỏi chức năng của phòng tạp chí khoa học và công nghệ là gì thế
+    - ad ơi cho em hỏi chức năng của phòng tạp chí khoa học và công nghệ là gì thế
+    - mình có thể biết về chức năng của phòng tạp chí khoa học và công nghệ được không
+    - admin ơi cho mình biết thêm thông tin về chức năng của phòng tạp chí khoa học và công nghệ được không
+    - chức năng của phòng tạp chí khoa học và công nghệ là gì vậy
+    - admin cho mình biết về chức năng của phòng tạp chí khoa học và công nghệ là gì được không
+    - admin ơi cho mình biết thêm về chức năng của phòng tạp chí khoa học và công nghệ được không
+    - bót ơi cho mình hỏi chức năng của phòng tạp chí khoa học và công nghệ được không ạ
+    - mình muốn biết thêm về chức năng của phòng tạp chí khoa học và công nghệ
+    - chức năng của phòng tạp chí khoa học và công nghệ của iuh là gì thế 
+    - chức năng của phòng tạp chí khoa học và công nghệ
+
+- intent: nhà xuất bản
+  examples: |
+    - trường mình có nhà xuất bản không ạ
+    - ad cho em hỏi trường mình có nhà xuất bản không ạ
+    - admin ơi cho em hỏi trường mình có nhà xuất bản không ạ
+    - admin ơi cho em hỏi trường mình có nhà xuất bản không
+    - admin ơi trường mình có nhà xuất bản không
+    - admin ơi trường mình có nhà xuất bản không ạ
+    - ad ơi trường mình có nhà xuất bản không
+    - ad ơi trường mình có nhà xuất bản không ạ
+    - cho em hỏi trường mình có nhà xuất bản 
+    - bót cho em hỏi trường mình có nhà xuất bản không ạ
+    - trường mình có nhà xuất bản không
+    - mình muốn biết thêm về nhà xuất bản
+    - em muốn biết thêm về nhà xuất bản
+    - nhà xuất bản ở đâu
+    - cho mình xin thêm thông tin về nhà xuất bản
+    - hiện tại thì nhà xuất bản ở đâu ạ
+    - em muốn biết thêm thông tin về nhà xuất bản
+    - hiện tại thì nhà xuất bản ở đâu ạ
+    - em muốn tìm hiểu thêm thông tin về nhà xuất bản
+    - nhà xuất bản của trường iuh nằm ở đâu vậy ạ
+    - nhà xuất bản của trường mình thì liên hệ như nào vậy ad
+    - nhà xuất bản của trường mình liên hệ như nào thế admin
+    - bót ơi mình muốn biết thêm thông tin về nhà xuất bản
+    - cho mình biết chức năng của nhà xuất bản được không
+    - nhà xuất bản là gì
+    - nhà xuất bản nằm ở đâu
+    - nhà xuất bản có tác dụng gì
+    - ad cho em hỏi nhà xuất bản là gì ạ
+    - admin cho em hỏi nhà xuất bản là gì ạ
+    - bót ơi cho mình hỏi nhà xuất bản là gì thế
+    - bót ơi cho em hỏi nhà xuất bản là gì thế
+    - bót ơi em tôi hỏi nhà xuất bản là gì thế
+    - bót ơi cho tui hỏi nhà xuất bản là gì thế
+    - ad ơi cho em hỏi nhà xuất bản có tác dụng gì thế 
+    - admin ơi cho em hỏi nhà xuất bản có tác dụng gì thế
+    - ad cho hỏi nhà xuất bản có tác dụng gì vậy
+    - ad cho mình hỏi nhà xuất bản có tác dụng gì vậy
+    - ad cho hỏi nhà xuất bản có tác dụng gì
+    - chức năng của pnhà xuất bản là gì thế
+    - ad cho mình hỏi chức năng của nhà xuất bản là gì thế
+    - ad ơi cho em hỏi chức năng của nhà xuất bản là gì thế
+    - mình có thể biết về chức năng của nhà xuất bản được không
+    - admin ơi cho mình biết thêm thông tin về chức năng của nhà xuất bản được không
+    - chức năng của nhà xuất bản là gì vậy
+    - admin cho mình biết về chức năng của nhà xuất bản là gì được không
+    - admin ơi cho mình biết thêm về chức năng của nhà xuất bản được không
+    - bót ơi cho mình hỏi chức năng của nhà xuất bản được không ạ
+    - mình muốn biết thêm về chức năng của nhà xuất bảnh
+    - chức năng của nhà xuất bản của iuh là gì thế 
+    - chức năng của nhà xuất bản
+
+
+  
+#button 2.2 ban giám hiệuphòng tổ chức hành chính
 - intent: hiệu trưởng #2.2.1
   examples: |
     - hiệu trưởng
@@ -379,6 +1154,30 @@ nlu:
     - mọi người ơi, cho em hỏi là em muốn nộp hồ sơ vào trường mình thì có những hình thức nào ạ?
     - cho em hỏi là trường mình có những phương thức nộp hồ sơ nào ạ?
     - em muốn học tại trường mình thì hiện tại trường có những phương thức nộp hồ sơ nào ạ?
+    - bót ơi cho mình hỏi cách nộp hồ sơ với ạ
+    - trường mình có nộp hồ sơ qua bưu điện được không?
+    - bót cho mình hỏi cách nộp hồ sơ với ạ
+    - trường mình có những cách nộp hồ sơ nào vậy bót
+    - ad cho em biết là trường mình có những cách nộp hồ sơ nào được không ạ
+    - bót ơi cho mình hỏi là trường mình có những cách nộp hồ sơ nào ạ
+    - trường mình có những cách nộp hồ sơ nào thế bót
+    - mình có thể nộp hồ sơ trên trường được không bót
+    - bót ơi mình có thể đến trường để nộp hồ sơ được không ạ
+    - bót ơi, mình muốn đến trường nộp hồ sơ được không ạ?
+    - bót ơi mình không thể đến trường để nộp hồ sơ thì làm thế nào được ạ
+    - bót ơi, mình có cách nào không đến trường mà vẫn nộp hồ sơ được không ạ
+    - ad ơi cho em hỏi là em không thể đến trường được thì có cách nộp hồ sơ nào khác không ạ
+    - trường mình có thể nộp qua bưu điện không ạ
+    - bót ơi, em có thể nộp hồ sơ qua bưu điện được không ạ
+    - bót ơi, hồ sơ em có thể gửi qua bưu điện được không ạ
+    - hồ sơ nộp qua bưu điện được không
+    - nộp hồ sơ qua bưu điện được không
+    - nộp hồ sơ qua bưu điện thì địa chỉ ở đâu
+    - địa chỉ để nộp hồ sơ qua bưu điện là gì
+    - nộp hồ sơ qua bưu điện có được không ạ
+    - em muốn nộp hồ sơ qua bưu điện có được không ạ
+    - bót ơi, em nộp hồ sơ qua bưu điện có được không ạ
+    - 
 
 
 ## HỌC VỤ
